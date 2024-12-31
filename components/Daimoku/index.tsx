@@ -59,14 +59,14 @@ const Daimoku = () => {
               <h2
                 style={daimokuTextStyle}
                 ref={daimokuContainer}
-                className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl"
+                className="mb-3 text-2xl font-bold text-black sm:text-3xl lg:text-2xl xl:text-3xl"
               >
                 100.000
               </h2>
               <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                 <button
                   onClick={() => setDaimoku(daimoku + 100)}
-                  className="shadow-submit dark:shadow-submit-dark rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
+                  className="shadow-submit rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
                   Aggiungi Daimoku
                 </button>
