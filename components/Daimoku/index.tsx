@@ -1,5 +1,7 @@
 "use client";
+import useDaimoku from "@/hooks/useDaimoku";
 import { useEffect, useRef, useState } from "react";
+import Modal from "./Modal";
 
 const daimokuTextStyle = {
   background: "-webkit-linear-gradient(45deg, #09009f, #00ff95 80%)",
@@ -21,7 +23,9 @@ function usePrevious(value: number) {
 const animationDuration = 500;
 
 const Daimoku = () => {
-  const [daimoku, setDaimoku] = useState(100000);
+  const [daimoku] = useDaimoku();
+  const [modalOpen, setModalOpen] = useState(false);
+
   const previousDaimoku = usePrevious(daimoku);
   const daimokuContainer = useRef<HTMLHeadingElement>(null);
 
@@ -61,11 +65,11 @@ const Daimoku = () => {
                 ref={daimokuContainer}
                 className="mb-3 text-2xl font-bold text-black sm:text-3xl lg:text-2xl xl:text-3xl"
               >
-                100.000
+                0
               </h2>
               <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                 <button
-                  onClick={() => setDaimoku(daimoku + 100)}
+                  onClick={() => setModalOpen(true)}
                   className="shadow-submit rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
                   Aggiungi Daimoku
@@ -75,6 +79,7 @@ const Daimoku = () => {
           </div>
         </div>
       </div>
+      <Modal open={modalOpen} setOpen={setModalOpen} />
     </section>
   );
 };

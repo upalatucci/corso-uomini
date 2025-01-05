@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import { ReactQueryClientProvider } from "@/components/ReactQueryClientProvider";
 
 const roboto = Roboto({
   weight: ["400", "700"],
@@ -24,13 +25,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${roboto.className} antialiased`}>
-        <Header />
-        {children}
-        <Footer />
-        <ScrollToTop />
-      </body>
-    </html>
+    <ReactQueryClientProvider>
+      <html lang="en">
+        <body className={`${roboto.className} antialiased`}>
+          <Header />
+          {children}
+          <Footer />
+          <ScrollToTop />
+        </body>
+      </html>
+    </ReactQueryClientProvider>
   );
 }
