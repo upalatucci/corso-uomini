@@ -76,7 +76,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Metodo di pagamento",
-    paragraphHTML: `Bonifico bancario: Dapro Viaggi Tour Operator Sas <br>IBAN: <strong>IT90J0837815201000000417266</strong>`,
+    paragraphHTML: `Bonifico bancario <strong>entro il 10 Febbraio</strong>: Dapro Viaggi Tour Operator Sas <br>IBAN: <strong>IT90J0837815201000000417266</strong>`,
   },
   // {
   //   id: 1,

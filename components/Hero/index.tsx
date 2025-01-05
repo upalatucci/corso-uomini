@@ -30,6 +30,7 @@ const Hero = () => {
                   >
                     qui
                   </a>
+                  entro il 31 Gennaio
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
