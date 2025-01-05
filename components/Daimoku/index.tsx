@@ -70,7 +70,7 @@ const Daimoku = () => {
               <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                 <button
                   onClick={() => setModalOpen(true)}
-                  className="shadow-submit rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
+                  className="shadow-submit rounded-md bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
                   Aggiungi Daimoku
                 </button>

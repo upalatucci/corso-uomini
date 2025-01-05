@@ -23,7 +23,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color">
-                  Corso Uomini Salerno
+                  Corso Uomini
                 </p>
               </div>
             </div>
