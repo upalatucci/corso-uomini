@@ -17,9 +17,19 @@ const Hero = () => {
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black  sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                   Corso Uomini Nazionale Febbraio 2025
                 </h1>
-                <p className=" mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
+                <p className="mb-2 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
                   Vinciamo in questo “Anno in cui volare ancora più in alto per
                   una Soka Gakkai giovane in tutto il mondo”
+                </p>
+                <p className="mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
+                  Compila la scheda{" "}
+                  <a
+                    href="https://form.jotform.com/243556420648056"
+                    target="_blank"
+                    className="text-blue-600 hover:underline cursor-pointer"
+                  >
+                    qui
+                  </a>
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
