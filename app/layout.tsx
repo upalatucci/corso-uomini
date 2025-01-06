@@ -1,17 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { ReactQueryClientProvider } from "@/components/ReactQueryClientProvider";
-
-const roboto = Roboto({
-  weight: ["400", "700"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  display: "swap",
-});
+import { permanentMarker, roboto } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Corso Uomini 2025",
@@ -27,7 +20,9 @@ export default function RootLayout({
   return (
     <ReactQueryClientProvider>
       <html lang="en">
-        <body className={`${roboto.className} antialiased`}>
+        <body
+          className={`${permanentMarker.variable} ${roboto.variable} antialiased`}
+        >
           <Header />
           {children}
           <Footer />

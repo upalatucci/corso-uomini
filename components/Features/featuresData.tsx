@@ -2,6 +2,28 @@ import { Feature } from "@/types/feature";
 
 const featuresData: Feature[] = [
   {
+    id: 0,
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="fill-current"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+        />
+      </svg>
+    ),
+    title: "Studio",
+    paragraphHTML:
+      "Al corso sara' centrale lo studio del Gosho 'Ripagare i debiti di gratitudine' che puoi trovare <a href='https://biblioteca.sgi-italia.org/rsnd/ripagare-i-debiti-di-gratitudine' class='text-blue-600 hover:underline' target='_blank'>qui</a>",
+  },
+  {
     id: 1,
     icon: (
       <svg
@@ -58,10 +80,10 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Costi",
-    paragraphHTML: `<strong>Camera singola</strong> disponibilità limitata euro 290€ <br/>
-  <strong>Camera doppia</strong> euro 224€ <br/>
-  <strong>Camera tripla</strong> euro 203€ <br/>
-  <strong>Camera quadrupla</strong> con due bagni euro 192€`,
+    paragraphHTML: `<strong>Camera singola</strong> disponibilità limitata euro 296,00€ <br/>
+  <strong>Camera doppia</strong> euro 230,00€ <br/>
+  <strong>Camera tripla</strong> euro 205,00€ <br/>
+  <strong>Camera quadrupla</strong> con due bagni euro 195,00€`,
   },
 
   {

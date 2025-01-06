@@ -1,16 +1,19 @@
-"use client";
-
+import { auth } from "@/auth";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Daimoku from "@/components/Daimoku";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import useFcmToken from "@/hooks/useFcmToken";
+import NotificationToken from "@/components/NotificationToken";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  useFcmToken();
+export default async function Home() {
+  const session = await auth();
+
+  if (!session) return redirect("/login");
 
   return (
     <>
+      <NotificationToken />
       <ScrollUp />
       <Hero />
       <Daimoku />
