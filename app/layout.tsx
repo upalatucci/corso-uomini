@@ -9,7 +9,7 @@ import { permanentMarker, roboto } from "./fonts";
 export const metadata: Metadata = {
   title: "Corso Uomini 2025",
   description:
-    "Vinciamo in questo “Anno in cui volare ancora più in alto per una Soka Gakkai giovane in tutto il mondo”",
+    "2° Corso Uomini Nazionale: voliamo ancora più in alto per una Soka Gakkai giovane in tutto il mondo",
 };
 
 export default function RootLayout({

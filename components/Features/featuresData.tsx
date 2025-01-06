@@ -51,7 +51,7 @@ const featuresData: Feature[] = [
     id: 5,
     icon: <BanknotesIcon className="fill-current" />,
     title: "Metodo di pagamento",
-    paragraphHTML: `Bonifico bancario <strong>entro il 10 Febbraio</strong>: Dapro Viaggi Tour Operator Sas <br>IBAN: <strong>IT90J0837815201000000417266</strong>`,
+    paragraphHTML: `Bonifico bancario <strong>entro il 10 Febbraio</strong>: Dapro Viaggi Tour Operator Sas <br>IBAN: <strong>IT93S0542415102000000001950</strong>`,
   },
   // {
   //   id: 1,
