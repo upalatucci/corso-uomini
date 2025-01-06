@@ -4,6 +4,7 @@ import {
   BanknotesIcon,
   CalendarDaysIcon,
   CurrencyEuroIcon,
+  EnvelopeIcon,
   MapIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
@@ -53,6 +54,17 @@ const featuresData: Feature[] = [
     title: "Metodo di pagamento",
     paragraphHTML: `Bonifico bancario <strong>entro il 10 Febbraio</strong>: Dapro Viaggi Tour Operator Sas <br>IBAN: <strong>IT93S0542415102000000001950</strong>`,
   },
+
+  {
+    id: 6,
+    icon: <EnvelopeIcon />,
+    title: "Contatti",
+    paragraphHTML: `Per chiarimenti e/o informazioni scrivere al comitato del corso:
+                <a href="mailto:corso.uomini@sgi-italia.org">
+                  corso.uomini@sgi-italia.org
+                </a>`,
+  },
+
   // {
   //   id: 1,
   //   icon: (
