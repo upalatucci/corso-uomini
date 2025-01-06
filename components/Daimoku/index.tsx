@@ -52,7 +52,7 @@ const Daimoku = () => {
   }, [daimoku, previousDaimoku]);
 
   return (
-    <section id="daimoku" className="overflow-hidden py-16 md:py-20 lg:py-28">
+    <section id="daimoku" className="overflow-hidden py-4 md:py-20 lg:py-4">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
