@@ -1,39 +1,24 @@
 import { Feature } from "@/types/feature";
+import { BookOpenIcon } from "@heroicons/react/16/solid";
+import {
+  BanknotesIcon,
+  CalendarDaysIcon,
+  CurrencyEuroIcon,
+  MapIcon,
+  UserGroupIcon,
+} from "@heroicons/react/24/outline";
 
 const featuresData: Feature[] = [
   {
     id: 0,
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="fill-current"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
-        />
-      </svg>
-    ),
+    icon: <BookOpenIcon />,
     title: "Studio",
     paragraphHTML:
       "Al corso sara' centrale lo studio del Gosho 'Ripagare i debiti di gratitudine' che puoi trovare <a href='https://biblioteca.sgi-italia.org/rsnd/ripagare-i-debiti-di-gratitudine' class='text-blue-600 hover:underline' target='_blank'>qui</a>",
   },
   {
     id: 1,
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 576 512"
-        className="fill-current"
-      >
-        <path d="M565.6 36.2C572.1 40.7 576 48.1 576 56l0 336c0 10-6.2 18.9-15.5 22.4l-168 64c-5.2 2-10.9 2.1-16.1 .3L192.5 417.5l-160 61c-7.4 2.8-15.7 1.8-22.2-2.7S0 463.9 0 456L0 120c0-10 6.1-18.9 15.5-22.4l168-64c5.2-2 10.9-2.1 16.1-.3L383.5 94.5l160-61c7.4-2.8 15.7-1.8 22.2 2.7zM48 136.5l0 284.6 120-45.7 0-284.6L48 136.5zM360 422.7l0-285.4-144-48 0 285.4 144 48zm48-1.5l120-45.7 0-284.6L408 136.5l0 284.6z" />
-      </svg>
-    ),
+    icon: <MapIcon />,
     title: "Luogo",
     paragraphHTML: `<a class='text-blue-600 hover:underline' target='_blank' href='https://www.google.com/maps/place/Grand+Hotel+Salerno/@40.6725175,14.7733016,17z/data=!3m1!4b1!4m9!3m8!1s0x133bc246d5b3550b:0x14eeac8b514c5197!5m2!4m1!1i2!8m2!3d40.6725135!4d14.7758765!16s%2Fg%2F1tj5515h?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D'>
        Grand Hotel Salerno via Lungomare Clemente Tafuri, 1 - 84127 Salerno (SA)
@@ -41,44 +26,20 @@ const featuresData: Feature[] = [
   },
   {
     id: 2,
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 448 512"
-        className="fill-current"
-      >
-        <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z" />
-      </svg>
-    ),
+    icon: <CalendarDaysIcon />,
     title: "Giorni",
     paragraph: "Dal 7 al 9 di Marzo",
   },
   {
     id: 3,
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 640 512"
-        className="fill-current"
-      >
-        <path d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3l0-84.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5l0 21.5c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-26.8C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112l32 0c24 0 46.2 7.5 64.4 20.3zM448 416l0-21.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176l32 0c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2l0 26.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3l0-84.7c-10 11.3-16 26.1-16 42.3zm144-42.3l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2l0 42.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-42.8c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112l32 0c61.9 0 112 50.1 112 112z" />
-      </svg>
-    ),
+    icon: <UserGroupIcon />,
     title: "Partecipanti",
     paragraph: "Responsabili fino a capitolo",
   },
 
   {
     id: 4,
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 320 512"
-        className="fill-current"
-      >
-        <path d="M48.1 240c-.1 2.7-.1 5.3-.1 8l0 16c0 2.7 0 5.3 .1 8L32 272c-17.7 0-32 14.3-32 32s14.3 32 32 32l28.3 0C89.9 419.9 170 480 264 480l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0c-57.9 0-108.2-32.4-133.9-80L256 336c17.7 0 32-14.3 32-32s-14.3-32-32-32l-143.8 0c-.1-2.6-.2-5.3-.2-8l0-16c0-2.7 .1-5.4 .2-8L256 240c17.7 0 32-14.3 32-32s-14.3-32-32-32l-125.9 0c25.7-47.6 76-80 133.9-80l24 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-24 0C170 32 89.9 92.1 60.3 176L32 176c-17.7 0-32 14.3-32 32s14.3 32 32 32l16.1 0z" />
-      </svg>
-    ),
+    icon: <CurrencyEuroIcon />,
     title: "Costi",
     paragraphHTML: `<strong>Camera singola</strong> disponibilità limitata euro 296,00€ <br/>
   <strong>Camera doppia</strong> euro 230,00€ <br/>
@@ -88,15 +49,7 @@ const featuresData: Feature[] = [
 
   {
     id: 5,
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 576 512"
-        className="fill-current"
-      >
-        <path d="M512 80c8.8 0 16 7.2 16 16l0 32L48 128l0-32c0-8.8 7.2-16 16-16l448 0zm16 144l0 192c0 8.8-7.2 16-16 16L64 432c-8.8 0-16-7.2-16-16l0-192 480 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24l48 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l112 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-112 0z" />
-      </svg>
-    ),
+    icon: <BanknotesIcon className="fill-current" />,
     title: "Metodo di pagamento",
     paragraphHTML: `Bonifico bancario <strong>entro il 10 Febbraio</strong>: Dapro Viaggi Tour Operator Sas <br>IBAN: <strong>IT90J0837815201000000417266</strong>`,
   },
