@@ -23,13 +23,13 @@ const Hero = () => {
                 </p>
                 <p className="mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
                   Compila la scheda{" "}
-                  <a
+                  {/* <a
                     href="https://form.jotform.com/243556420648056"
                     target="_blank"
                     className="text-blue-600 hover:underline cursor-pointer"
                   >
                     qui
-                  </a>
+                  </a> */}
                   entro il 31 Gennaio
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
