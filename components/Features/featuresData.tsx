@@ -64,7 +64,7 @@ const featuresData: Feature[] = [
     icon: <EnvelopeIcon />,
     title: "Contatti",
     paragraphHTML: `Per chiarimenti e/o informazioni scrivere al comitato del corso:
-                <a href="mailto:corso.uomini@sgi-italia.org">
+                <a class='text-blue-600 hover:underline' target='_blank' href="mailto:corso.uomini@sgi-italia.org">
                   corso.uomini@sgi-italia.org
                 </a>`,
   },
