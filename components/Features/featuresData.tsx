@@ -52,7 +52,11 @@ const featuresData: Feature[] = [
     id: 5,
     icon: <BanknotesIcon className="fill-current" />,
     title: "Metodo di pagamento",
-    paragraphHTML: `Bonifico bancario <strong>entro il 10 Febbraio</strong>: Dapro Viaggi Tour Operator Sas <br>IBAN: <strong>IT93S0542415102000000001950</strong>`,
+    paragraphHTML: `Bonifico bancario <strong>entro il 10 Febbraio</strong> <br/>
+    intestato a: Dapro Viaggi Tour Operator Sas <br>
+    IBAN: <strong>IT93S0542415102000000001950</strong><br />
+    Banca Popolare di Bari <br />
+    Causale: SGI - Nome, Cognome, Camera singola/doppia/tripla/quadrupla`,
   },
 
   {
