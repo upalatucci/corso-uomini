@@ -6,7 +6,7 @@ const HOURS_IN_MS = 60 * MINUTES_IN_MS;
 const DAYS_IN_MS = 24 * HOURS_IN_MS;
 const WEEKS_IN_MS = DAYS_IN_MS * 7;
 
-const courseDate = new Date(2024, 8, 27, 15, 0);
+const courseDate = new Date(2025, 3, 7, 14, 0);
 
 const CountDown: FC = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
