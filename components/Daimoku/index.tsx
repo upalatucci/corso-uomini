@@ -58,9 +58,18 @@ const Daimoku = () => {
           <div className="w-full px-4">
             <div className="mx-auto text-center">
               <h2 className="mb-3 text-2xl font-bold text-black sm:text-3xl lg:text-2xl xl:text-3xl">
-                Recitiamo insieme <br /> 1 ora <br /> di daimoku al giorno fino
-                alla data del corso per vincere insieme già da adesso
+                Obiettivi
               </h2>
+
+              <ul className="mb-10">
+                <li className="mb-4">
+                  sfidarsi a recitare almeno 60’ di Daimoku al giorno
+                </li>
+
+                <li>
+                  Studiare insieme il Gosho Ripagare i debiti di gratitudine
+                </li>
+              </ul>
             </div>
             <div
               className="wow fadeInUp mx-auto max-w-[800px] text-center"

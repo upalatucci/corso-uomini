@@ -1,5 +1,6 @@
 import { auth } from "@/auth";
 import ScrollUp from "@/components/Common/ScrollUp";
+import CountDown from "@/components/CountDown/CountDown";
 import Daimoku from "@/components/Daimoku";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
@@ -16,6 +17,7 @@ export default async function Home() {
       <NotificationToken />
       <ScrollUp />
       <Hero />
+      <CountDown />
       <Daimoku />
       <Features />
       {/* <Brands />
