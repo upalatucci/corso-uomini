@@ -64,7 +64,8 @@ Chiuso (con sbarre), con ingresso da via Torrione, adiacente Hotel Salerno, Tari
     paragraphHTML: `<strong>Camera singola</strong> disponibilità limitata euro 296,00€ <br/>
   <strong>Camera doppia</strong> euro 230,00€ <br/>
   <strong>Camera tripla</strong> euro 205,00€ <br/>
-  <strong>Camera quadrupla</strong> con due bagni euro 195,00€`,
+  <strong>Camera quadrupla</strong> con due bagni euro 195,00€<br/>
+  la tassa di soggiorno, di tre euro per notte, è invulsa nel prezzo della stanza.`,
   },
 
   {
