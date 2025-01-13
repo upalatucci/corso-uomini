@@ -16,8 +16,8 @@ const featuresData: Feature[] = [
     id: 0,
     icon: <BookOpenIcon />,
     title: "Studio",
-    paragraphHTML:
-      "Al corso sara' centrale lo studio del Gosho 'Ripagare i debiti di gratitudine' che puoi trovare <a href='https://biblioteca.sgi-italia.org/rsnd/ripagare-i-debiti-di-gratitudine' class='text-blue-600 hover:underline' target='_blank'>qui</a>",
+    paragraphHTML: `Al corso sara' centrale lo studio del Gosho 'Ripagare i debiti di gratitudine' che puoi trovare <a href='https://biblioteca.sgi-italia.org/rsnd/ripagare-i-debiti-di-gratitudine' class='text-blue-600 hover:underline' target='_blank'>qui</a>. <br />
+      Scarica lo studio da qui: <a href='/ripagare_i_debiti_di_gratitudine-1.pdf' class='text-blue-600 hover:underline' download>Parte 1</a> e <a href='/ripagare_i_debiti_di_gratitudine-2.pdf' class='text-blue-600 hover:underline' download>Parte 2</a>`,
   },
   {
     id: 1,
