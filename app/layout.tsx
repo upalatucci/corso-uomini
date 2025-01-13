@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { ReactQueryClientProvider } from "@/components/ReactQueryClientProvider";
 import { permanentMarker, roboto } from "./fonts";
+import NotificationToken from "@/components/NotificationToken";
+import ScrollUp from "@/components/Common/ScrollUp";
 
 export const metadata: Metadata = {
   title: "Corso Uomini 2025",
@@ -23,6 +25,8 @@ export default function RootLayout({
         <body
           className={`${permanentMarker.variable} ${roboto.variable} antialiased`}
         >
+          <NotificationToken />
+          <ScrollUp />
           <Header />
           {children}
           <Footer />
