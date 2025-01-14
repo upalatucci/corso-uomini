@@ -1,7 +1,9 @@
+import { JSX, ReactElement, ReactNode } from "react";
+
 export type Menu = {
   id: number;
   title: string;
-  path?: string;
+  path: string;
   newTab: boolean;
-  submenu?: Menu[];
+  icon?: ReactNode | ReactElement | JSX.Element;
 };
