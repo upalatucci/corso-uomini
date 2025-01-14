@@ -48,7 +48,7 @@ Chiuso (con sbarre), con ingresso da via Torrione, adiacente Hotel Salerno, Tari
     icon: <ClockIcon />,
     title: "Orari",
     paragraphHTML:
-      "Il check-in si potra' effettuare dalle ore 14:00 di venerdi' 7 - il corso iniziera' alle ore 15 e terminera' alle ore 12 di documenica 8.",
+      "Il check-in si potra' effettuare dalle ore 14:00 di venerdi' 7 - il corso iniziera' alle ore 15 e terminera' alle ore 12 di domenica 9.",
   },
   {
     id: 3,
