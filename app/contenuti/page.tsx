@@ -17,21 +17,13 @@ const Contenuti: FC = () => {
               qui
             </a>
             . <br />
-            Scarica lo studio da qui:{" "}
+            Scarica lo studio da{" "}
             <a
-              href="/ripagare_i_debiti_di_gratitudine-1.pdf"
+              href="/ripagare_i_debiti_di_gratitudine.pdf"
               className="text-blue-600 hover:underline"
               download
             >
-              Parte 1
-            </a>{" "}
-            e{" "}
-            <a
-              href="/ripagare_i_debiti_di_gratitudine-2.pdf"
-              className="text-blue-600 hover:underline"
-              download
-            >
-              Parte 2
+              qui
             </a>
           </p>
         </div>
