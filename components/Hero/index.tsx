@@ -18,10 +18,14 @@ const Hero = () => {
                 <h1 className="mb-8 text-3xl font-bold leading-tight text-black  sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                   2° Corso Uomini Nazionale 7-8-9 Marzo 2025
                 </h1>
-                <h1 className="mb-8 text-3xl font-bold leading-tight text-black  sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  voliamo ancora più in alto per una Soka Gakkai giovane in
-                  tutto il mondo
-                </h1>
+                <Image
+                  src="/images/slogan.png"
+                  alt="voliamo ancora più in alto per una Soka Gakkai giovane in
+                  tutto il mondo"
+                  className="mx-auto"
+                  width={700}
+                  height={400}
+                />
                 <p className="mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
                   Compila{" "}
                   <a
