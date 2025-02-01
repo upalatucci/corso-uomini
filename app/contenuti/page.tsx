@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 const Contenuti: FC = () => {
   return (
-    <div className="px-10 relative z-10 overflow-hidden bg-white pb-8 pt-[120px] md:pb-[80px] md:pt-[100px] xl:pb-[100px] xl:pt-[180px] 2xl:pb-[120px] 2xl:pt-[210px]">
+    <div className="px-10 relative z-10 overflow-hidden  pb-8 pt-[120px] md:pb-[80px] md:pt-[100px] xl:pb-[100px] xl:pt-[180px] 2xl:pb-[120px] 2xl:pt-[210px]">
       <div className="my-4">
         <div className="flex justify-center flex-col text-center">
           <h2 className="text-3xl mb-4">Contenuti</h2>

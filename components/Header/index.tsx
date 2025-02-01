@@ -32,7 +32,7 @@ const Header = () => {
               <div>
                 <nav
                   className={
-                    "navbar w-full right-0 z-[100] rounded border-[.5px] border-body-color/50 bg-white px-6 py-2 duration-300  md:visible md:static md:w-auto md:border-none md:!bg-transparent md:p-0 md:opacity-100 visibility top-md-full fixed md:block left-0 bottom-0 md:left-auto md:bottom-auto h-20 md:h-auto"
+                    "navbar w-full right-0 z-[100] rounded border-[.5px] border-body-color/50  px-6 py-2 duration-300  md:visible md:static md:w-auto md:border-none md:!bg-transparent md:p-0 md:opacity-100 visibility top-md-full fixed md:block left-0 bottom-0 md:left-auto md:bottom-auto h-20 md:h-auto"
                   }
                 >
                   <ul className="flex w-full justify-around md:justify-start md:space-x-12">

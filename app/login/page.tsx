@@ -40,7 +40,7 @@ const Login = () => {
   return (
     <section
       id="home"
-      className=" relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+      className=" relative z-10 overflow-hidden  pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
     >
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
@@ -62,7 +62,7 @@ const Login = () => {
                     Password
                   </label>
                   <div className="mt-2">
-                    <div className="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
+                    <div className="flex items-center rounded-md  pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
                       <input
                         id="password"
                         name="password"
