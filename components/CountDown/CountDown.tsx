@@ -34,14 +34,16 @@ const CountDown: FC = () => {
 
   return (
     <div className="flex flex-col text-center mb-10">
-      <h3 className="mb-4 text-2xl">INIZIO CORSO</h3>
+      <h3 className="mb-4 text-2xl relative top-[-2rem] md:top-[-5rem] z-10 text-white">
+        IL CORSO INIZIA TRA
+      </h3>
 
       <div id="countdown" className="countdown">
         <div className="time">
           <h2 className="text-gradient" id="weeks">
             {deltaWeeks}
           </h2>
-          <small>Sett.</small>
+          <small>Settimane</small>
         </div>
         <div className="time">
           <h2 className="text-gradient" id="days">

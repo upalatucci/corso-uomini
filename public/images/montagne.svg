@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1787" height="244.965" viewBox="0 0 1787 244.965">
+  <g id="montagne" transform="translate(0.5 0.545)">
+    <path id="Unione_1" data-name="Unione 1" d="M909.108-547.55H0V-691.74l350.808-66.985L391.9-734.777l90.982,20.128L638.2-736.687,734.752-775l65.066,30.177,35.067,13.2,253.526-27.1,41.094,23.948,90.98,20.128,155.32-22.038L1472.355-775l65.066,30.177L1786-661.276V-547.55Z" transform="translate(0 775)" fill="#009289" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    <path id="Tracciato_16" data-name="Tracciato 16" d="M971.854,16.536,831.362,80.816l180.445-41Z" transform="translate(122.912 2.445)" fill="#002e3d"/>
+    <path id="Tracciato_17" data-name="Tracciato 17" d="M1287.106,0,1253,68.969l88.154-28.745L1482.847,74.1l-130.674-43.92Z" transform="translate(185.249)" fill="#002e3d"/>
+    <path id="Tracciato_19" data-name="Tracciato 19" d="M329.254,16.536,188.763,80.816l180.445-41Z" transform="translate(27.908 2.445)" fill="#002e3d"/>
+    <path id="Tracciato_20" data-name="Tracciato 20" d="M644.507,0,610.4,68.969l88.153-28.745,120.31,31.092L709.574,30.176Z" transform="translate(90.244)" fill="#002e3d"/>
+    <rect id="Rettangolo_32" data-name="Rettangolo 32" width="24" height="24" transform="translate(876 227.45) rotate(-45)" fill="#019289"/>
+  </g>
+</svg>

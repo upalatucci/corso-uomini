@@ -1,5 +1,4 @@
 import { Feature } from "@/types/feature";
-import { BookOpenIcon } from "@heroicons/react/16/solid";
 import {
   BanknotesIcon,
   CalendarDaysIcon,
@@ -12,13 +11,6 @@ import {
 } from "@heroicons/react/24/outline";
 
 const featuresData: Feature[] = [
-  {
-    id: 0,
-    icon: <BookOpenIcon />,
-    title: "Studio",
-    paragraphHTML: `Al corso sara' centrale lo studio del Gosho 'Ripagare i debiti di gratitudine' che puoi trovare <a href='https://biblioteca.sgi-italia.org/rsnd/ripagare-i-debiti-di-gratitudine' class='text-blue-600 hover:underline' target='_blank'>qui</a>. <br />
-      Scarica lo studio da <a href='/ripagare_i_debiti_di_gratitudine.pdf' class='text-blue-600 hover:underline' download>qui.</a>`,
-  },
   {
     id: 1,
     icon: <MapIcon />,
@@ -36,6 +28,17 @@ const featuresData: Feature[] = [
 <strong>Parcheggio Foce Irno </strong>: 
 Chiuso (con sbarre), con ingresso da via Torrione, adiacente Hotel Salerno, Tariffe 1€ ogni ora ( aperto H 24 )<br />
 <strong>Parcheggio interrato Foce Irno Chiuso</strong> ( con sbarre), con ingresso da via lungomare, adiacente Hotel Salerno, tariffa diurna 1 € ogni ora, tariffa notturna 1 € ogni 2 ore, (aperto H 24 ).`,
+  },
+
+  {
+    id: 4,
+    icon: <CurrencyEuroIcon />,
+    title: "Costi",
+    paragraphHTML: `<strong>Camera singola</strong> disponibilità limitata euro 296,00€ <br/>
+  <strong>Camera doppia</strong> euro 230,00€ <br/>
+  <strong>Camera tripla</strong> euro 205,00€ <br/>
+  <strong>Camera quadrupla</strong> con due bagni euro 195,00€<br/>
+  la tassa di soggiorno, di tre euro per notte, è inclusa nel prezzo della stanza.`,
   },
   {
     id: 2,
@@ -55,17 +58,6 @@ Chiuso (con sbarre), con ingresso da via Torrione, adiacente Hotel Salerno, Tari
     icon: <UserGroupIcon />,
     title: "Partecipanti",
     paragraph: "Responsabili fino a capitolo",
-  },
-
-  {
-    id: 4,
-    icon: <CurrencyEuroIcon />,
-    title: "Costi",
-    paragraphHTML: `<strong>Camera singola</strong> disponibilità limitata euro 296,00€ <br/>
-  <strong>Camera doppia</strong> euro 230,00€ <br/>
-  <strong>Camera tripla</strong> euro 205,00€ <br/>
-  <strong>Camera quadrupla</strong> con due bagni euro 195,00€<br/>
-  la tassa di soggiorno, di tre euro per notte, è inclusa nel prezzo della stanza.`,
   },
 
   {

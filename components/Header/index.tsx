@@ -19,11 +19,10 @@ const Header = () => {
             <div className="px-4 xl:mr-12">
               <Link href="/" className={"header-logo w-full flex py-8"}>
                 <Image
-                  src="/images/logo/logo-2.svg"
+                  src="/images/logo/logo-corso-uomini.png"
                   alt="logo"
-                  width={100}
-                  height={30}
-                  className="w-40"
+                  width={80}
+                  height={20}
                 />
 
                 <h2 className="block md:hidden">Corso Uomini</h2>

@@ -4,14 +4,33 @@ import { HomeIcon } from "@heroicons/react/24/outline";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Home",
+    title: "HOME",
     path: "/",
     newTab: false,
     icon: <HomeIcon />,
   },
   {
+    id: 0,
+    title: "NEWS",
+    path: "/obiettivi",
+    newTab: false,
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1.5em"
+        height="1.5em"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M14.4 6H20v10h-7l-.4-2H7v7H5V4h9zm-.4 8h2v-2h2v-2h-2V8h-2v2l-1-2V6h-2v2H9V6H7v2h2v2H7v2h2v-2h2v2h2v-2l1 2zm-3-4V8h2v2zm3 0h2v2h-2z"
+        />
+      </svg>
+    ),
+  },
+  {
     id: 2,
-    title: "Obiettivi",
+    title: "OBIETTIVI",
     path: "/obiettivi",
     newTab: false,
     icon: (
@@ -30,7 +49,7 @@ const menuData: Menu[] = [
   },
   {
     id: 3,
-    title: "Info",
+    title: "INFO",
     path: "/#maggiori-info",
     newTab: false,
     icon: (
@@ -49,7 +68,7 @@ const menuData: Menu[] = [
   },
   {
     id: 4,
-    title: "Contenuti",
+    title: "CONTENUTI",
     path: "/contenuti",
     newTab: false,
     icon: (

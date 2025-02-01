@@ -2,15 +2,7 @@
 import useDaimoku from "@/hooks/useDaimoku";
 import { useEffect, useRef, useState } from "react";
 import Modal from "./Modal";
-
-const daimokuTextStyle = {
-  background: "-webkit-linear-gradient(45deg, #09009f, #00ff95 80%)",
-  WebkitBackgroundClip: "text",
-  WebkitTextFillColor: "transparent",
-  fontSize: "64px",
-  padding: "1rem 0",
-  "@media (minWidth: 768px)": { fontSize: "120px" },
-};
+import News from "./News";
 
 function usePrevious(value: number) {
   const ref = useRef<number>(null);
@@ -53,36 +45,37 @@ const Daimoku = () => {
 
   return (
     <section id="daimoku" className="overflow-hidden py-4 md:py-20 lg:py-4">
-      <div className="container">
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4">
-            <div className="mx-auto text-center">
-              <h2 className="mb-3 text-2xl font-bold text-black sm:text-3xl lg:text-2xl xl:text-3xl">
-                Obiettivi
+      <div className="container flex">
+        <News />
+        <div className="-mx-4 flex w-full md:w-1/3 flex-wrap mb-10 p-4">
+          <div className=" px-4">
+            <div className="mx-auto text-left">
+              <h2 className="mb-3 text-2xl font-bold text-primary sm:text-3xl lg:text-2xl xl:text-3xl">
+                OBIETTIVI
               </h2>
 
-              <ul className="mb-10">
+              <ul className="mb-10 text-xl">
                 <li className="mb-4">
-                  sfidarsi a recitare almeno 60’ di Daimoku al giorno
+                  Sfidarsi a recitare almeno 60’ di Daimoku al giorno
                 </li>
 
                 <li>
-                  Studiare insieme il Gosho Ripagare i debiti di gratitudine
+                  Studiare insieme il Gosho{" "}
+                  <strong>Ripagare i debiti di gratitudine</strong>
                 </li>
               </ul>
             </div>
             <div
-              className="wow fadeInUp mx-auto max-w-[800px] text-center"
+              className="wow fadeInUp mx-auto max-w-[800px] text-left mb-10"
               data-wow-delay=".2s"
             >
               <h2
-                style={daimokuTextStyle}
                 ref={daimokuContainer}
-                className="mb-3 text-2xl font-bold text-black sm:text-3xl lg:text-2xl xl:text-3xl"
+                className="mb-3 text-2xl font-bold text-primary sm:text-3xl lg:text-4xl xl:text-5xl"
               >
                 0
               </h2>
-              <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+              <div className=" space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                 <button
                   onClick={() => setModalOpen(true)}
                   className="shadow-submit rounded-md bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
@@ -90,6 +83,26 @@ const Daimoku = () => {
                   Aggiungi Daimoku
                 </button>
               </div>
+            </div>
+            <div className="py-10 text-xl font-bold">
+              Al corso sara&apos; centrale lo studio del Gosho &apos;Ripagare i
+              debiti di gratitudine&apos; che puoi trovare{" "}
+              <a
+                href="https://biblioteca.sgi-italia.org/rsnd/ripagare-i-debiti-di-gratitudine"
+                className="text-blue-600 hover:underline"
+                target="_blank"
+              >
+                qui
+              </a>
+              . <br />
+              Scarica lo studio da{" "}
+              <a
+                href="/ripagare_i_debiti_di_gratitudine.pdf"
+                className="text-blue-600 hover:underline"
+                download
+              >
+                qui.
+              </a>
             </div>
           </div>
         </div>
