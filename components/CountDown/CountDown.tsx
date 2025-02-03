@@ -11,7 +11,7 @@ const CountDown: FC = () => {
   const [_, setTic] = useState(0);
   const now = new Date();
 
-  const courseDate = new Date(2025, 3, 7, 14, 0);
+  const courseDate = new Date(2025, 2, 7, 14, 0);
   const deltaTime = courseDate.getTime() - now.getTime();
 
   const deltaWeeks = Math.trunc(deltaTime / WEEKS_IN_MS);
