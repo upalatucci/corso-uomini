@@ -35,7 +35,8 @@ const GoalsForm: FC = () => {
         <h2 className="text-3xl mb-4">Che obiettivi hai per questo corso?</h2>
         <p>
           Vuoi condividere i tuoi obiettivi con noi? Altri partecipanti potranno
-          vederli proprio qui sul sito in forma anonima.
+          vederli proprio qui sul sito in forma anonima dopo una nostra
+          revisione.
         </p>
         <form id="formGoals" onSubmit={addGoal}>
           <div className="col-span-full mb-10">
