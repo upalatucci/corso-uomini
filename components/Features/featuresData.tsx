@@ -98,7 +98,7 @@ Chiuso (con sbarre), con ingresso da via Torrione, adiacente Hotel Salerno, Tari
             stroke="#019289"
             strokeLinecap="round"
             strokeLinejoin="round"
-            stroke-width="3"
+            strokeWidth="3"
           />
           <path
             id="Tracciato_63"
@@ -108,7 +108,7 @@ Chiuso (con sbarre), con ingresso da via Torrione, adiacente Hotel Salerno, Tari
             stroke="#019289"
             strokeLinecap="round"
             strokeLinejoin="round"
-            stroke-width="3"
+            strokeWidth="3"
           />
         </g>
       </svg>
@@ -139,7 +139,7 @@ Chiuso (con sbarre), con ingresso da via Torrione, adiacente Hotel Salerno, Tari
             stroke="#019289"
             strokeLinecap="round"
             strokeLinejoin="round"
-            stroke-width="3"
+            strokeWidth="3"
           />
           <path
             id="Tracciato_65"
@@ -150,7 +150,7 @@ Chiuso (con sbarre), con ingresso da via Torrione, adiacente Hotel Salerno, Tari
             stroke="#019289"
             strokeLinecap="round"
             strokeLinejoin="round"
-            stroke-width="3"
+            strokeWidth="3"
           />
         </g>
       </svg>
@@ -182,7 +182,7 @@ Chiuso (con sbarre), con ingresso da via Torrione, adiacente Hotel Salerno, Tari
             stroke="#019289"
             strokeLinecap="round"
             strokeLinejoin="round"
-            stroke-width="3"
+            strokeWidth="3"
           />
           <path
             id="Tracciato_67"
@@ -193,7 +193,7 @@ Chiuso (con sbarre), con ingresso da via Torrione, adiacente Hotel Salerno, Tari
             stroke="#019289"
             strokeLinecap="round"
             strokeLinejoin="round"
-            stroke-width="3"
+            strokeWidth="3"
           />
           <path
             id="Tracciato_68"
@@ -204,7 +204,7 @@ Chiuso (con sbarre), con ingresso da via Torrione, adiacente Hotel Salerno, Tari
             stroke="#019289"
             strokeLinecap="round"
             strokeLinejoin="round"
-            stroke-width="3"
+            strokeWidth="3"
           />
         </g>
       </svg>
@@ -236,7 +236,7 @@ Chiuso (con sbarre), con ingresso da via Torrione, adiacente Hotel Salerno, Tari
             stroke="#019289"
             strokeLinecap="round"
             strokeLinejoin="round"
-            stroke-width="3"
+            strokeWidth="3"
           />
           <path
             id="Tracciato_70"
@@ -247,7 +247,7 @@ Chiuso (con sbarre), con ingresso da via Torrione, adiacente Hotel Salerno, Tari
             stroke="#019289"
             strokeLinecap="round"
             strokeLinejoin="round"
-            stroke-width="3"
+            strokeWidth="3"
           />
         </g>
       </svg>
@@ -283,7 +283,7 @@ Chiuso (con sbarre), con ingresso da via Torrione, adiacente Hotel Salerno, Tari
             stroke="#019289"
             strokeLinecap="round"
             strokeLinejoin="round"
-            stroke-width="3"
+            strokeWidth="3"
           />
           <path
             id="Tracciato_72"
@@ -294,7 +294,7 @@ Chiuso (con sbarre), con ingresso da via Torrione, adiacente Hotel Salerno, Tari
             stroke="#019289"
             strokeLinecap="round"
             strokeLinejoin="round"
-            stroke-width="3"
+            strokeWidth="3"
           />
         </g>
       </svg>

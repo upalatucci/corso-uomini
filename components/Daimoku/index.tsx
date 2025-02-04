@@ -103,6 +103,18 @@ const Daimoku = () => {
               >
                 qui.
               </a>
+              <p className="my-5">
+                Inoltre condividiamo degli incoraggianti per i responsabili di
+                capitolo estratti dalla Nuova Rivoluzione Umana vol. 26 capitolo
+                Vessillo della Legge{" "}
+                <a
+                  href="/nru_vol26.pdf"
+                  className="text-blue-600 hover:underline"
+                  download
+                >
+                  scarica
+                </a>
+              </p>
             </div>
           </div>
         </div>
