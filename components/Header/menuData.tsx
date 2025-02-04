@@ -12,7 +12,7 @@ const menuData: Menu[] = [
   {
     id: 0,
     title: "NEWS",
-    path: "/obiettivi",
+    path: "/news",
     newTab: false,
     icon: (
       <svg
