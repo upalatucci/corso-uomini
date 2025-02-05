@@ -27,7 +27,7 @@ const Contenuti: FC = () => {
             </a>
           </p>
           <p>
-            Inoltre condividiamo degli incoraggianti per i responsabili di
+            Inoltre condividiamo degli incoraggiamenti per i responsabili di
             capitolo estratti dalla Nuova Rivoluzione Umana vol. 26 capitolo
             Vessillo della Legge{" "}
             <a
