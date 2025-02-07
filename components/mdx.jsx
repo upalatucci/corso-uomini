@@ -87,6 +87,8 @@ function createHeading(level) {
   return Heading;
 }
 
+const Blockquote = ({children}) => <blockquote className="p-4 my-4 border-s-4 border-primary">{children}</blockquote>
+
 const components = {
   h1: createHeading(1),
   h2: createHeading(2),
@@ -99,6 +101,7 @@ const components = {
   a: CustomLink,
   code: Code,
   Table,
+  blockquote: Blockquote
 };
 
 export function CustomMDX(props) {
