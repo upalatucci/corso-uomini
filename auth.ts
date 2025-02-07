@@ -1,8 +1,8 @@
 import { getPassword } from "@/lib/getPassword";
-import NextAuth from "next-auth";
+import NextAuth, { NextAuthConfig } from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 
-export const authOptions = {
+export const authOptions: NextAuthConfig = {
   providers: [
     Credentials({
       credentials: {
