@@ -34,7 +34,7 @@ const Footer = () => {
             src="/images/uccelli-dx.svg"
             width={500}
             height={200}
-            className="w-80"
+            className="w-80 hidden md:block"
           />
         </div>
       </footer>
