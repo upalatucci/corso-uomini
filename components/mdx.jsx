@@ -42,7 +42,7 @@ function CustomLink(props) {
     return <a {...props} />;
   }
 
-  return <a target="_blank" rel="noopener noreferrer" {...props} />;
+  return <a target="_blank" rel="noopener noreferrer" className="text-primary" {...props} />;
 }
 
 function RoundedImage(props) {
@@ -89,6 +89,9 @@ function createHeading(level) {
 
 const Blockquote = ({children}) => <blockquote className="p-4 my-4 border-s-4 border-primary">{children}</blockquote>
 
+
+const List = ({children}) => <ul className="list-inside list-disc my-4">{children}</ul>
+
 const components = {
   h1: createHeading(1),
   h2: createHeading(2),
@@ -101,7 +104,8 @@ const components = {
   a: CustomLink,
   code: Code,
   Table,
-  blockquote: Blockquote
+  blockquote: Blockquote,
+  ul: List
 };
 
 export function CustomMDX(props) {
