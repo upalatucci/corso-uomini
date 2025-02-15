@@ -7,7 +7,7 @@ const News: FC = () => {
   const allBlogs = getBlogPosts();
   return (
     <div className="w-full lg:w-2/3 mb-10 lg:border-r-gray-400 lg:border-r-8 p-4">
-      <div className="flex justify-center align-middle">
+      <div className="flex flex-col justify-center align-middle">
         {allBlogs
           .sort((a, b) => {
             if (
@@ -31,7 +31,7 @@ const News: FC = () => {
                   src={post.metadata.image as string}
                   width={300}
                   height={300}
-                  className="w-full"
+                  className="w-80"
                 />
                 <div className="flex flex-col p-4">
                   <p className="text-primary font-bold  tracking-tight">

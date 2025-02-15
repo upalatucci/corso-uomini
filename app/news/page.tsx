@@ -34,7 +34,7 @@ const News: FC = () => {
                     src={post.metadata.image as string}
                     width={300}
                     height={300}
-                    className="w-full"
+                    className="w-80"
                   />
                   <div className="flex flex-col p-4">
                     <p className="text-primary font-bold  tracking-tight">

@@ -46,7 +46,7 @@ function CustomLink(props) {
 }
 
 function RoundedImage(props) {
-  return <Image alt={props.alt} className="rounded-lg my-10 mx-auto" width={700} height={700} {...props} />;
+  return <figure className="my-10"><Image alt={props.alt} className="rounded-lg mx-auto" width={700} height={700} {...props} /> <figcaption className="text-sm max-w-2xl mt-4 mx-auto">{props?.title}</figcaption></figure>;
 }
 
 function Code({ children, ...props }) {
