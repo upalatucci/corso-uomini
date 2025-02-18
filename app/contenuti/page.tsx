@@ -40,6 +40,69 @@ const Contenuti: FC = () => {
           </p>
         </div>
       </div>
+      <div className="my-4">
+        <div className="flex justify-center flex-col text-center">
+          <h2 className="text-3xl mb-4" id="musica">
+            Musica
+          </h2>
+
+          <div className="flex justify-center items-center flex-col">
+            <div className="flex gap-4 items-center my-4">
+              <div>Volare</div>
+              <audio controls>
+                <source src="/musica/VOLARE(BASE).mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+
+              <a
+                href="/musica/VOLARE_(LYRICS).pdf"
+                className="text-blue-600 hover:underline"
+                download
+              >
+                Scarica testo
+              </a>
+            </div>
+
+            <div className="flex gap-4 items-center my-4">
+              <div>Ningen Kakumei</div>
+              <audio controls>
+                <source
+                  src="/musica/NINGEN_KAKUMEI(ORIGINAL).mp3"
+                  type="audio/mpeg"
+                />
+                Your browser does not support the audio element.
+              </audio>
+
+              <a
+                href="/musica/NINGEN_KAKUMEI(LYRICS).pdf"
+                className="text-blue-600 hover:underline"
+                download
+              >
+                Scarica testo
+              </a>
+            </div>
+
+            <div className="flex gap-4 items-center my-4">
+              <div>Volare</div>
+              <audio controls>
+                <source
+                  src="/musica/CUORE_SEMPRE_GIOVANE_(ORIGINALE).mp3"
+                  type="audio/mpeg"
+                />
+                Your browser does not support the audio element.
+              </audio>
+
+              <a
+                href="/musica/CUORE_SEMPRE_GIOVANE(LYRICS).pdf"
+                className="text-blue-600 hover:underline"
+                download
+              >
+                Scarica testo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
