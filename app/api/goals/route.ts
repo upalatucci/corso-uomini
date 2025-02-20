@@ -29,7 +29,9 @@ export async function POST(request: NextRequest) {
 
     await addGoal(body.goal);
 
-    NextResponse.json({ message: "Obiettivo salvato con successo su Redis." });
+    return NextResponse.json({
+      message: "Obiettivo salvato con successo su Redis.",
+    });
   } catch (error) {
     console.error(
       "Errore durante il salvataggio dell'obiettivo su Redis:",

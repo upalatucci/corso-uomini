@@ -10,6 +10,7 @@ const GoalsForm: FC = () => {
     setSuccess(false);
     event.preventDefault();
     setLoading(true);
+    setError(null);
 
     const formData = new FormData(event.target as HTMLFormElement);
 
