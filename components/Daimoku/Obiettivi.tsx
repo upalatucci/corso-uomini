@@ -114,11 +114,7 @@ const Obiettivi = () => {
         </div>
         <div className="py-10 text-xl">
           Scarica le musiche e i testi del corso qui:{" "}
-          <a
-            href="/contenuti#musica"
-            className="text-blue-600 hover:underline"
-            download
-          >
+          <a href="/contenuti#musica" className="text-blue-600 hover:underline">
             Musiche
           </a>
         </div>
