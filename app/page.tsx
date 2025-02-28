@@ -14,8 +14,8 @@ export default async function Home() {
     <>
       <Hero />
       <CountDown />
-      <Daimoku />
       <Features />
+      <Daimoku />
       {/* <Brands />
       <Testimonials />
       <Blog />

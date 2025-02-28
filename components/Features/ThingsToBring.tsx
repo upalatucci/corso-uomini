@@ -11,7 +11,21 @@ const ThingsToBring: FC = () => {
   return (
     <section id="cose-da-portare" className="py-16 md:py-20 lg:py-28">
       <div className="container">
-        <SectionTitle title="Cose da portare" center />
+        <SectionTitle title="Prepariamoci al corso" center />
+
+        <div className="mx-auto flex justify-center">
+          <a
+            className="text-blue-600 hover:underline"
+            download
+            href="/pdf/mappa.pdf"
+          >
+            Scarica la mappa INTERATTIVA di Salerno. Clicca sulle icone!!
+          </a>
+        </div>
+
+        <h3 className="text-center font-bold mt-8 mb-2">
+          Hai fatto la valigia?
+        </h3>
 
         <div className="mx-auto flex justify-center">
           <ul>
