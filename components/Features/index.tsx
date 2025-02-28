@@ -1,10 +1,12 @@
 import SectionTitle from "../Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
+import ThingsToBring from "./ThingsToBring";
 import featuresData from "./featuresData";
 
 const Features = () => {
   return (
     <>
+      <ThingsToBring />
       <section id="maggiori-info" className="py-16 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle title="Informazioni generali" center />

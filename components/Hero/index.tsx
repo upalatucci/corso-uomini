@@ -45,10 +45,10 @@ const Hero = () => {
                     Conta Daimoku
                   </Link>
                   <Link
-                    href="/#maggiori-info"
+                    href="/#cose-da-portare"
                     className="inline-block rounded-md bg-primary hover:bg-primary/80  px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out  "
                   >
-                    Maggiori informazioni
+                    Prepariamoci per il corso
                   </Link>
                 </div>
               </div>
