@@ -48,14 +48,17 @@ const Contenuti: FC = () => {
 
           <div className="flex justify-center items-center flex-col">
             <div className="flex gap-4 items-center my-4">
-              <div>Volare</div>
+              <div>Giovani scalate la montagna del XXI secolo</div>
               <audio controls>
-                <source src="/musica/VOLARE(BASE).mp3" type="audio/mpeg" />
+                <source
+                  src="/musica/giovani_scalate_la_montagna_del_XXI_secolo.mp3"
+                  type="audio/mpeg"
+                />
                 Your browser does not support the audio element.
               </audio>
 
               <a
-                href="/musica/VOLARE_(LYRICS).pdf"
+                href="/musica/giovani_scalate_la_montagna_del_XXI_secolo_LYRICS.pdf"
                 className="text-blue-600 hover:underline"
                 download
               >
