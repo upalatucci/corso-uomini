@@ -111,6 +111,14 @@ const Obiettivi = () => {
               scarica
             </a>
           </p>
+          Per approfondire la &quot;Rivoluzione degli zadankai&quot;:
+          <a
+            href="https://ilnuovorinascimento.org/a/la-nuova-rivoluzione-umana-vol-13-capitolo-stella-guida-raccolta-di-tutte-le-puntate-pubblicate"
+            className="text-blue-600 hover:underline"
+            target="_blank"
+          >
+            clicca qui
+          </a>
         </div>
         <div className="py-10 text-xl">
           Scarica le musiche e i testi del corso qui:{" "}
