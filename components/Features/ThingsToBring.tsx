@@ -23,6 +23,15 @@ const ThingsToBring: FC = () => {
           </a>
         </div>
 
+        <div className="mx-auto flex justify-center">
+          <a
+            className="text-blue-600 hover:underline"
+            download
+            href="/pdf/mappashotelstampa.pdf"
+          >
+            E anche la mappa dell&apos;hotel
+          </a>
+        </div>
         <h3 className="text-center font-bold mt-8 mb-2">
           Hai fatto la valigia?
         </h3>
