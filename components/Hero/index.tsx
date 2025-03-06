@@ -44,12 +44,13 @@ const Hero = () => {
                   >
                     Conta Daimoku
                   </Link>
-                  <Link
-                    href="/#cose-da-portare"
+                  <a
+                    download
+                    href="/pdf/pamphlet.pdf"
                     className="inline-block rounded-md bg-primary hover:bg-primary/80  px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out  "
                   >
-                    Prepariamoci per il corso
-                  </Link>
+                    Scarica pamphlet qui
+                  </a>
                 </div>
               </div>
             </div>
