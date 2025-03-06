@@ -49,7 +49,7 @@ const Hero = () => {
                     href="/pdf/pamphlet.pdf"
                     className="inline-block rounded-md bg-primary hover:bg-primary/80  px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out  "
                   >
-                    Scarica pamphlet qui
+                    Scarica programma
                   </a>
                 </div>
               </div>
