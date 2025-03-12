@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import FeedbackModal from "./Feedback";
 
 const Hero = () => {
   return (
@@ -27,29 +27,18 @@ const Hero = () => {
                   height={400}
                 />
                 <p className="mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-                  Compila{" "}
-                  <a
-                    href="https://form.jotform.com/250032172712039"
-                    target="_blank"
-                    className="text-blue-600 hover:underline cursor-pointer"
-                  >
-                    qui
-                  </a>{" "}
-                  la scheda
+                  Lascia un messaggio dopo il corso, raccontaci le tue
+                  impressioni, suggerimenti/determinazioni, cosa possiamo
+                  migliorare?
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                    href="/#daimoku"
-                    className="rounded-md bg-secondary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-secondary/80"
-                  >
-                    Conta Daimoku
-                  </Link>
+                  <FeedbackModal />
                   <a
                     download
                     href="/pdf/pamphlet.pdf"
                     className="inline-block rounded-md bg-primary hover:bg-primary/80  px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out  "
                   >
-                    Scarica programma
+                    Scarica programma aggiornato
                   </a>
                 </div>
               </div>
