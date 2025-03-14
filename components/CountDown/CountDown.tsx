@@ -11,8 +11,8 @@ const CountDown: FC = () => {
   const [_, setTic] = useState(0);
   const now = new Date();
 
-  const courseDate = new Date(2025, 2, 7, 14, 0);
-  const deltaTime = courseDate.getTime() - now.getTime();
+  const courseDate = new Date(2025, 2, 9, 12, 0);
+  const deltaTime = now.getTime() - courseDate.getTime();
 
   const deltaWeeks = Math.trunc(deltaTime / WEEKS_IN_MS);
   const remainingDays = deltaTime % WEEKS_IN_MS;
@@ -35,7 +35,7 @@ const CountDown: FC = () => {
   return (
     <div className="flex flex-col text-center mb-10">
       <h3 className="mb-4 text-2xl relative top-[-2rem] md:top-[-5rem] z-10 text-white">
-        IL CORSO INIZIA TRA
+        IL CORSO E&apos; FINITO DA
       </h3>
 
       <div id="countdown" className="countdown">

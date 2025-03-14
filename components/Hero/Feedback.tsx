@@ -58,7 +58,7 @@ const FeedbackModal: FC = () => {
         onClick={() => setOpen(true)}
         className="rounded-md bg-secondary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-secondary/80"
       >
-        Lascia un messaggio
+        Lascia un commento dopo il corso
       </button>
 
       <Dialog open={open} onClose={closeModal} className="relative z-10">

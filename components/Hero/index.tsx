@@ -1,14 +1,19 @@
 import Image from "next/image";
 import FeedbackModal from "./Feedback";
+import { feedbacks } from "./feedbacks";
 
 const Hero = () => {
+  const randomFeedbacks = feedbacks
+    .map((value) => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
   return (
     <>
       <section
         id="home"
         className=" relative z-10 overflow-hidden pb-8 pt-[120px] md:pb-[80px] md:pt-[100px] xl:pb-[100px] xl:pt-[180px] 2xl:pb-[120px] 2xl:pt-[210px]"
       >
-        <div className="container mb-[8rem] md:mb-40">
+        <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div
@@ -27,7 +32,7 @@ const Hero = () => {
                   height={400}
                 />
                 <p className="mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-                  Lascia un messaggio dopo il corso, raccontaci le tue
+                  Lascia un commento dopo il corso, raccontaci le tue
                   impressioni, suggerimenti/determinazioni, cosa possiamo
                   migliorare?
                 </p>
@@ -44,6 +49,19 @@ const Hero = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="px-4 max-w-[1400px] mx-auto flex flex-row relative w-full snap-x gap-6 overflow-x-auto pb-14  mb-[8rem] md:mb-40 mt-4 h-fit">
+          {randomFeedbacks.map((feedback) => (
+            <div
+              className="min-w-[20rem] w-[20vw] max-w-fit max-h-fit rounded m-4 overflow-hidden shadow-lg"
+              key={feedback}
+            >
+              <div className="px-6 py-4">
+                <p className="text-gray-700 text-base">{feedback} </p>
+              </div>
+            </div>
+          ))}
         </div>
         <div className="absolute right-[-75%] top-[-50%] scale-75 md:right-[-30%] md:top-[-50%] md:scale-100 z-[-1] opacity-30 lg:opacity-100">
           <svg

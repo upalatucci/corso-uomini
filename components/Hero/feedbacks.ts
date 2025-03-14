@@ -1,0 +1,9 @@
+export const feedbacks = [
+  "Buongiorno amici..... Che dire.... Io sono tornato con forte determinazioni per aiutare tutti i gruppi a realizzare sia gli obiettivi di attività che personali. Sono deciso più che mai a sostenere gli uomini e che diventino pilastri sia nella società, nel lavoro, nella famiglia e nell'attività. È stato un corso splendido sotto ogni punto di vista, esperienze, relatori tutto straordinario. La convivialità nell'atmosfera è stata qualcosa di veramente speciale, ho sentito forte l'amicizia, l'unità e l'empatia. Ho sentito uomini uniti proprio in itaidoshin, ho sentito una unità incredibile, sensei era li con noi. Grazie per tutto quello che avete fatto amici miei grazie grazie. VINCIAMO INSIEME AL NOSTRO MAESTRO...\nRiccardo Galeotti Milano ",
+  "Buongiorno è stato un bel corso ringrazio tutti coloro che hanno reso possibile questo incontro che per me è stato di approfondimento e di incoraggiamento per una pratica che vada oltre i limiti, attingendo alla nona coscienza che è l'essenza, la vita stessa nostra e dell'universo. Grazie infinite ",
+  "Grazie ",
+  "Ho percepito unità \nche in ognuno si percepiva la consapevolezza di agire con coraggio e gratitudine .\nLa preparazione dello studio è  risultata incoraggiante e gioiosa nella spiegazione. \nCi sono stati momenti di grande commozione oltre all'esperienze il Daimoku recitato insieme sembrava scuotere la terra.\n Un corso meraviglioso. \nGrazie a tutti \n",
+  "Grazie. È stato bello sentire la voglia di rideterminarsi!! ",
+  "Grazie!!! Un corso molto incoraggiante e ricco di umanità e fede. Grazie grazie grazie",
+  "É' stato un gran bel corso, tutte persone splendide, siamo anche stati baciati dal bel tempo, adesso viene il bello, tanto Daimoku ed essere coerente con gli insegnamenti di Sensei per realizzare una forte armonia e la pace nel mondo. Grazie di cuore a tutti, ci vediamo l'anno prossimo, ciao Valerio.",
+];
