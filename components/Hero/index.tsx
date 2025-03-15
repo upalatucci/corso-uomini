@@ -51,10 +51,13 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="px-4 max-w-[1400px] mx-auto flex flex-row relative w-full snap-x gap-6 overflow-x-auto pb-14  mb-[8rem] md:mb-40 mt-4 h-fit">
+        <div className="px-4 max-w-[1400px] mx-auto flex flex-wrap relative w-full snap-x gap-6  pb-14  mb-[8rem] md:mb-40 my-4 h-fit">
+          <h3 className="mt-10 text-2xl relative top-[-2rem] md:top-[-5rem] z-10">
+            I COMMENTI DEI MEMBRI:
+          </h3>
           {randomFeedbacks.map((feedback) => (
             <div
-              className="min-w-[20rem] w-[20vw] max-w-fit max-h-fit rounded m-4 overflow-hidden shadow-lg"
+              className="max-w-sm rounded mx-4 overflow-hidden  max-h-fit  shadow-lg"
               key={feedback}
             >
               <div className="px-6 py-4">
