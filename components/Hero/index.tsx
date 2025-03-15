@@ -51,20 +51,22 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="px-4 max-w-[1400px] mx-auto flex flex-wrap relative w-full snap-x gap-6  pb-14  mb-[8rem] md:mb-40 my-4 h-fit">
-          <h3 className="mt-10 text-2xl relative top-[-2rem] md:top-[-5rem] z-10">
+        <div className="px-4 mx-auto container  w-full  pb-14  mb-[8rem] md:mb-40 my-4 ">
+          <h3 className="mt-10 text-2xl top-[-2rem] md:top-[-5rem] z-10 text-center">
             I COMMENTI DEI MEMBRI:
           </h3>
-          {randomFeedbacks.map((feedback) => (
-            <div
-              className="max-w-sm rounded mx-4 overflow-hidden  max-h-fit  shadow-lg"
-              key={feedback}
-            >
-              <div className="px-6 py-4">
-                <p className="text-gray-700 text-base">{feedback} </p>
+          <div className="flex flex-wrap mx-auto  justify-center">
+            {randomFeedbacks.map((feedback) => (
+              <div
+                className="md:max-w-sm rounded m-4 overflow-hidden  shadow-lg"
+                key={feedback}
+              >
+                <div className="px-6 py-4">
+                  <p className="text-gray-700 text-base">{feedback} </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         <div className="absolute right-[-75%] top-[-50%] scale-75 md:right-[-30%] md:top-[-50%] md:scale-100 z-[-1] opacity-30 lg:opacity-100">
           <svg
