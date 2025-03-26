@@ -117,7 +117,7 @@ const SingleGallery: FC<SingleGalleryProps> = ({
           />
         </Link>
       </div>
-      <div className="text-center">
+      <div className="text-center block md:hidden">
         Swipe a destra e sinistra per cambiare foto
       </div>
     </>
