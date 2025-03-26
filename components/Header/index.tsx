@@ -24,8 +24,6 @@ const Header = () => {
                   width={80}
                   height={20}
                 />
-
-                <h2 className="block md:hidden">Corso Uomini</h2>
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
