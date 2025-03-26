@@ -2,7 +2,9 @@ import { photos } from "@/app/galleria/photos";
 import SingleGallery from "@/components/SingleGallery";
 import { FC } from "react";
 
-const Photo: FC<{ params: { photo: string } }> = async ({ params }) => {
+const Photo: FC<{ params: Promise<{ photo: string }> }> = async ({
+  params,
+}) => {
   const { photo: selectedPhoto } = await params;
 
   const photoIndex = photos.findIndex((photo) => photo === selectedPhoto);
