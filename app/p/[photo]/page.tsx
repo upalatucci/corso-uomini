@@ -22,4 +22,10 @@ const Photo: FC<{ params: Promise<{ photo: string }> }> = async ({
   );
 };
 
+export async function generateStaticParams() {
+  return photos.map((photo) => ({
+    photo,
+  }));
+}
+
 export default Photo;
