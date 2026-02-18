@@ -5,7 +5,7 @@ import { photos } from "./photos";
 
 const Galleria: FC = () => {
   return (
-    <main className="mx-auto max-w-[1960px] p-4 mt-[120px]">
+    <main className="min-h-screen bg-defaultBg mx-auto max-w-[1960px] p-4 pt-[120px]">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
         {photos.map((photo) => (
           <Link

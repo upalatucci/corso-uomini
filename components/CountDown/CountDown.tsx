@@ -1,64 +1,50 @@
 "use client";
-import React, { FC, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const MINUTES_IN_MS = 1000 * 60;
 const HOURS_IN_MS = 60 * MINUTES_IN_MS;
 const DAYS_IN_MS = 24 * HOURS_IN_MS;
-const WEEKS_IN_MS = DAYS_IN_MS * 7;
 
-const CountDown: FC = () => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [_, setTic] = useState(0);
+const CountDown = () => {
+  const [, setTic] = useState(0);
   const now = new Date();
+  const courseDate = new Date(2026, 2, 27, 9, 0); // 27 Marzo 2026
+  const deltaTime = courseDate.getTime() - now.getTime();
 
-  const courseDate = new Date(2025, 2, 9, 12, 0);
-  const deltaTime = now.getTime() - courseDate.getTime();
+  const isPast = deltaTime <= 0;
+  const absDelta = Math.abs(deltaTime);
 
-  const deltaWeeks = Math.trunc(deltaTime / WEEKS_IN_MS);
-  const remainingDays = deltaTime % WEEKS_IN_MS;
-
-  const deltaDays = Math.trunc(remainingDays / DAYS_IN_MS);
-
-  const remainingHours = remainingDays % DAYS_IN_MS;
-
-  const deltaHours = Math.trunc(remainingHours / HOURS_IN_MS);
+  const deltaDays = Math.floor(absDelta / DAYS_IN_MS);
+  const remainingHours = absDelta % DAYS_IN_MS;
+  const deltaHours = Math.floor(remainingHours / HOURS_IN_MS);
   const remainingMinutes = remainingHours % HOURS_IN_MS;
-
-  const deltaMinutes = Math.trunc(remainingMinutes / MINUTES_IN_MS);
+  const deltaMinutes = Math.floor(remainingMinutes / MINUTES_IN_MS);
 
   useEffect(() => {
-    setInterval(() => {
-      setTic((prevTic) => prevTic++);
-    }, MINUTES_IN_MS);
+    const id = setInterval(() => setTic((t) => t + 1), MINUTES_IN_MS);
+    return () => clearInterval(id);
   }, []);
 
   return (
-    <div className="flex flex-col text-center mb-10">
-      <h3 className="mb-4 text-2xl relative top-[-2rem] md:top-[-5rem] z-10 text-white">
-        IL CORSO E&apos; FINITO DA
+    <div className="bg-defaultBg py-10 text-center">
+      <h3 className="mb-6 text-xl font-bold text-primary md:text-2xl">
+        {isPast ? "IL CORSO È TERMINATO" : "MANCANO AL CORSO"}
       </h3>
-
-      <div id="countdown" className="countdown">
+      <div className="countdown mx-auto flex max-w-2xl justify-center gap-6 md:gap-12">
         <div className="time">
-          <h2 className="text-gradient" id="weeks">
-            {deltaWeeks}
-          </h2>
-          <small>Settimane</small>
-        </div>
-        <div className="time">
-          <h2 className="text-gradient" id="days">
+          <h2 className="text-4xl font-bold text-primary md:text-6xl">
             {deltaDays}
           </h2>
           <small>Giorni</small>
         </div>
         <div className="time">
-          <h2 className="text-gradient" id="hours">
+          <h2 className="text-4xl font-bold text-primary md:text-6xl">
             {deltaHours}
           </h2>
           <small>Ore</small>
         </div>
         <div className="time">
-          <h2 className="text-gradient" id="minutes">
+          <h2 className="text-4xl font-bold text-primary md:text-6xl">
             {deltaMinutes}
           </h2>
           <small>Minuti</small>

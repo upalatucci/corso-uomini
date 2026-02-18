@@ -7,7 +7,7 @@ const SubmitButton = () => {
   const { pending } = useFormStatus();
 
   return (
-    <button className="shadow-submit rounded-md bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90">
+    <button className="shadow-submit rounded-xl bg-accent px-9 py-4 text-base font-medium text-white duration-300 hover:bg-accent/90">
       {pending && (
         <svg
           aria-hidden="true"
@@ -40,7 +40,7 @@ const Login = () => {
   return (
     <section
       id="home"
-      className=" relative z-10 overflow-hidden  pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+      className="relative z-10 min-h-screen overflow-hidden bg-defaultBg pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
     >
       <div className="container">
         <div className="-mx-4 flex flex-wrap">

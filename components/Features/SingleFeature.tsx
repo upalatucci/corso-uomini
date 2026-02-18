@@ -8,7 +8,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         <div className="mb-10 h-[70px] w-[70px] items-center justify-center rounded-md  text-primary">
           {icon}
         </div>
-        <h3 className="mb-5 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl">
+        <h3 className="mb-5 text-xl font-bold text-primary sm:text-2xl lg:text-xl xl:text-2xl">
           {title}
         </h3>
         {paragraphHTML ? (

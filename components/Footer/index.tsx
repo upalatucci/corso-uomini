@@ -3,42 +3,23 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <>
-      <footer
-        className="wow fadeInUp  relative z-10  py-16 md:py-20 lg:pt-24 my-20"
-        data-wow-delay=".1s"
-      >
-        <div className="absolute right-10 top-14 z-[-1]">
-          <Image
-            alt="soka gakkai"
-            src="/images/logo/logo-soka.svg"
-            width={500}
-            height={200}
-            className="w-40 md:w-80"
-          />
+    <footer className="relative z-10 border-t border-stroke/30 bg-defaultBg py-12 md:py-16">
+      <div className="container">
+        <div className="flex flex-col items-center justify-center gap-6 md:flex-row md:justify-between">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded text-white">
+                <Image
+                  src="/images/logo/logo-corso-uomini.png"
+                  alt="logo"
+                  width={80}
+                  height={20}
+                />
+          </div>
+          <div className="text-center text-sm text-body-color md:text-right">
+            © {new Date().getFullYear()} Corso nazionale uomini
+          </div>
         </div>
-
-        <div
-          className="absolute bottom-[-4rem] right-0 left-0 flex justify-center gap-20
-        z-[-1]"
-        >
-          <Image
-            alt="soka gakkai"
-            src="/images/uccelli-sx.svg"
-            width={500}
-            height={200}
-            className="w-80"
-          />
-          <Image
-            alt="soka gakkai"
-            src="/images/uccelli-dx.svg"
-            width={500}
-            height={200}
-            className="w-80 hidden md:block"
-          />
-        </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 };
 

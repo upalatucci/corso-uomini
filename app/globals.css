@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #fdf0e7;
-  --foreground: #171717;
+  --background: #FBF8F0;
+  --foreground: #1f2937;
+  --primary: #375F7F;
+  --accent: #E0875C;
+  --teal: #4A9B8E;
 }
 
 body {
@@ -46,11 +49,12 @@ body {
   font-size: 1.5rem;
 }
 
-.countdown .item small {
+.countdown .item small,
+.countdown .time small {
   font-size: 1rem;
   font-weight: 500;
   text-transform: capitalize;
-  color: #1b1564;
+  color: var(--primary);
 }
 
 @media (min-width: 768px) {

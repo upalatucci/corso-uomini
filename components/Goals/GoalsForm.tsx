@@ -62,7 +62,7 @@ const GoalsForm: FC = () => {
             id="goal-button"
             type="submit"
             disabled={loading}
-            className="mb-4 flex mx-auto rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="mb-4 flex mx-auto rounded-md bg-accent px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-accent/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
             {loading && (
               <svg

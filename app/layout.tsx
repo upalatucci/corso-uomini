@@ -4,14 +4,17 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { ReactQueryClientProvider } from "@/components/ReactQueryClientProvider";
-import { roboto } from "./fonts";
+import { roboto, caveatBrush } from "./fonts";
 import NotificationToken from "@/components/NotificationToken";
 import ScrollUp from "@/components/Common/ScrollUp";
 
 export const metadata: Metadata = {
-  title: "Corso Uomini 2025",
+  title: "3º Corso nazionale uomini 2026",
   description:
-    "2° Corso Uomini Nazionale: voliamo ancora più in alto per una Soka Gakkai giovane in tutto il mondo",
+    "3º Corso nazionale uomini Salerno 27-29 Marzo 2026",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -21,15 +24,15 @@ export default function RootLayout({
 }>) {
   return (
     <ReactQueryClientProvider>
-      <html lang="en">
+      <html lang="en" className="bg-defaultBg">
         <head>
+          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
           <link
             rel="icon"
             type="image/png"
             href="/favicon-96x96.png"
             sizes="96x96"
           />
-          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
           <link rel="shortcut icon" href="/favicon.ico" />
           <link
             rel="apple-touch-icon"
@@ -38,7 +41,7 @@ export default function RootLayout({
           />
           <link rel="manifest" href="/site.webmanifest" />
         </head>
-        <body className={`${roboto.variable} antialiased`}>
+        <body className={`${roboto.variable} ${caveatBrush.variable} min-h-screen bg-defaultBg antialiased`}>
           <NotificationToken />
           <ScrollUp />
           <Header />

@@ -197,7 +197,7 @@ const Modal: FC<ModalProps> = ({ open, setOpen }) => {
                 <button
                   type="submit"
                   form="daimoku-form"
-                  className="inline-flex w-full justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary/90 sm:ml-3 sm:w-auto"
+                  className="inline-flex w-full justify-center rounded-md bg-accent px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-accent/90 sm:ml-3 sm:w-auto"
                 >
                   Aggiungi
                 </button>

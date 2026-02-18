@@ -49,32 +49,6 @@ const featuresData: Feature[] = [
 <strong>Parcheggio Vinciprova: chiuso  </strong>( con sbarre), a circa 100 m dall' Hotel Salerno, Tariffa 1 € ogni 2 ore, (aperto H 24 )<br />
 <strong>Parcheggio interrato Foce Irno Chiuso</strong> ( con sbarre), con ingresso da via lungomare, adiacente Hotel Salerno, tariffa diurna 1 € ogni ora, tariffa notturna 1 € ogni 2 ore, (aperto H 24 ).`,
   },
-
-  {
-    id: 4,
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="35.918"
-        height="45.425"
-        viewBox="0 0 35.918 45.425"
-      >
-        <path
-          id="Icon_core-euro"
-          data-name="Icon core-euro"
-          d="M35.307,10.413H43.23V6.188H35.307a22.75,22.75,0,0,0-21.286,14.79H7.313V25.2H12.9a22.736,22.736,0,0,0,0,7.395H7.313v4.226h6.709a22.75,22.75,0,0,0,21.286,14.79h7.923V47.387H35.307a18.51,18.51,0,0,1-16.7-10.564H39V32.6H17.192a18.574,18.574,0,0,1,0-7.395H39V20.977h-20.4a18.51,18.51,0,0,1,16.7-10.564Z"
-          transform="translate(-7.313 -6.188)"
-          fill="#019289"
-        />
-      </svg>
-    ),
-    title: "Costi",
-    paragraphHTML: `<strong>Camera singola Esaurita</strong> <br/>
-  <strong>Camera doppia</strong> euro 230,00€ <br/>
-  <strong>Camera tripla Esaurita</strong><br/>
-  <strong>Camera quadrupla Esaurita</strong><br/>
-  la tassa di soggiorno, di tre euro per notte, è inclusa nel prezzo della stanza.`,
-  },
   {
     id: 2,
     icon: (
@@ -114,7 +88,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Giorni",
-    paragraph: "Dal 7 al 9 di Marzo",
+    paragraph: "Dal 27 al 29 di Marzo",
   },
   {
     id: 8,
@@ -157,7 +131,7 @@ const featuresData: Feature[] = [
     ),
     title: "Orari",
     paragraphHTML:
-      "Il check-in si potra' effettuare dalle ore 14:00 di venerdi' 7 - il corso iniziera' alle ore 15 e terminera' alle ore 12 di domenica 9.",
+      "Il check-in si potra' effettuare dalle ore 14:00 di venerdi' 27 - il corso iniziera' alle ore 15 e terminera' alle ore 12 di domenica 29.",
   },
   {
     id: 3,
@@ -212,54 +186,6 @@ const featuresData: Feature[] = [
     title: "Partecipanti",
     paragraph: "Responsabili fino a capitolo",
   },
-
-  {
-    id: 5,
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="59.341"
-        height="48.073"
-        viewBox="0 0 59.341 48.073"
-      >
-        <g
-          id="Icon_akar-credit-card"
-          data-name="Icon akar-credit-card"
-          transform="translate(1.5 1.5)"
-        >
-          <path
-            id="Tracciato_69"
-            data-name="Tracciato 69"
-            d="M8.634,6H53.707a5.634,5.634,0,0,1,5.634,5.634v33.8a5.634,5.634,0,0,1-5.634,5.634H8.634A5.634,5.634,0,0,1,3,45.439v-33.8A5.634,5.634,0,0,1,8.634,6Z"
-            transform="translate(-3 -6)"
-            fill="none"
-            stroke="#019289"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="3"
-          />
-          <path
-            id="Tracciato_70"
-            data-name="Tracciato 70"
-            d="M24.585,16.362A7.871,7.871,0,0,0,18.548,13.5,8.258,8.258,0,0,0,10.5,21.951,8.258,8.258,0,0,0,18.548,30.4a7.866,7.866,0,0,0,6.037-2.862m14.085-5.589A8.258,8.258,0,0,1,30.622,30.4a8.257,8.257,0,0,1-8.048-8.451A8.257,8.257,0,0,1,30.622,13.5,8.258,8.258,0,0,1,38.671,21.951Z"
-            transform="translate(3.585 0.585)"
-            fill="none"
-            stroke="#019289"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="3"
-          />
-        </g>
-      </svg>
-    ),
-    title: "Metodo di pagamento",
-    paragraphHTML: `Bonifico bancario <strong>entro il 10 Febbraio</strong> <br/>
-    intestato a: Dapro Viaggi Tour Operator Sas <br>
-    IBAN: <strong>IT93S0542415102000000001950</strong><br />
-    Banca Popolare di Bari <br />
-    Causale: SGI - Nome, Cognome, Camera singola/doppia/tripla/quadrupla`,
-  },
-
   {
     id: 6,
     icon: (

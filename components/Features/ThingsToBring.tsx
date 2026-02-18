@@ -9,13 +9,13 @@ const ThingsToBring: FC = () => {
   const [thingsChecked, toggleId] = useThingsToBring();
 
   return (
-    <section id="cose-da-portare" className="py-16 md:py-20 lg:py-28">
+    <section id="cose-da-portare" className="bg-defaultBg py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle title="Prepariamoci al corso" center />
 
         <div className="mx-auto flex justify-center">
           <a
-            className="text-blue-600 hover:underline"
+            className="text-primary hover:underline"
             download
             href="/pdf/mappa.pdf"
           >
@@ -25,7 +25,7 @@ const ThingsToBring: FC = () => {
 
         <div className="mx-auto flex justify-center">
           <a
-            className="text-blue-600 hover:underline"
+            className="text-primary hover:underline"
             download
             href="/pdf/mappashotelstampa.pdf"
           >

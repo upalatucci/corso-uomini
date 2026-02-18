@@ -32,18 +32,23 @@ export default {
       // => @media (min-width: 1400px) { ... }
     },
     extend: {
+      fontFamily: {
+        brush: ["var(--font-caveat-brush)", "cursive"],
+      },
       colors: {
         current: "currentColor",
         transparent: "transparent",
         white: "#FFFFFF",
         black: "#121723",
         dark: "#1D2430",
-        primary: "#009289",
+        primary: "#375F7F",
+        accent: "#E0875C",
+        teal: "#4A9B8E",
+        defaultBg: "#F3E7CD",
         secondary: "#213E4C",
-        defaultBg: "#FDF0E7",
         yellow: "#FBB040",
-        "body-color": "#788293",
-        "gray-light": "#F0F2F9",
+        "body-color": "#374151",
+        "gray-light": "#F5F2EB",
         stroke: "#E3E8EF",
       },
 
