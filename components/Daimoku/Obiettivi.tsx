@@ -5,7 +5,7 @@ const ObiettiviCards = [
 
 const Obiettivi = () => {
   return (
-    <div className="w-full">
+    <div id="obiettivi" className="w-full scroll-mt-24">
       <h2 className="mb-10 text-center text-2xl font-bold text-primary sm:text-3xl md:text-4xl">
         Obiettivi
       </h2>
