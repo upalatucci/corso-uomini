@@ -53,6 +53,26 @@ export function getBlogPosts() {
   return getMDXData(path.join(process.cwd(), "app", "news", "posts"));
 }
 
+function getYearFromDate(dateStr: string): number {
+  const d = new Date(dateStr.includes("T") ? dateStr : `${dateStr}T00:00:00`);
+  return d.getFullYear();
+}
+
+export function getBlogPostsByYear(year: number) {
+  return getBlogPosts().filter(
+    (post) => getYearFromDate(post.metadata.publishedAt) === year
+  );
+}
+
+export function getBlogPostsSortedByDateDesc() {
+  return getBlogPosts().sort((a, b) => {
+    return (
+      new Date(b.metadata.publishedAt).getTime() -
+      new Date(a.metadata.publishedAt).getTime()
+    );
+  });
+}
+
 export function formatDate(date: string, includeRelative = false) {
   const currentDate = new Date();
   if (!date.includes("T")) {

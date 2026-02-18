@@ -1,18 +1,14 @@
-import { formatDate, getBlogPosts } from "@/app/news/utils";
+import { formatDate, getBlogPostsByYear } from "@/app/news/utils";
 import Link from "next/link";
 import Image from "next/image";
 
 const News = () => {
-  const allBlogs = getBlogPosts();
-  const posts = allBlogs
-    .sort((a, b) => {
-      if (
-        new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
-      ) {
-        return -1;
-      }
-      return 1;
-    })
+  const posts = getBlogPostsByYear(2026)
+    .sort(
+      (a, b) =>
+        new Date(b.metadata.publishedAt).getTime() -
+        new Date(a.metadata.publishedAt).getTime()
+    )
     .slice(0, 3);
 
   return (
