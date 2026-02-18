@@ -32,28 +32,49 @@ const ThingsToBring: FC = () => {
             E anche la mappa dell&apos;hotel
           </a>
         </div>
-        <h3 className="text-center font-bold mt-8 mb-2">
+        <h3 className="text-center font-bold mt-8 mb-6 text-primary">
           Hai fatto la valigia?
         </h3>
 
-        <div className="mx-auto flex justify-center">
-          <ul>
-            {things.map((cosa) => (
-              <li key={cosa.id} className="my-4">
-                <label className="cursor-pointer">
-                  <input
-                    type="checkbox"
-                    className="pr-4"
-                    name={cosa.id.toString()}
-                    checked={thingsChecked?.includes(cosa.id)}
-                    onChange={() => toggleId(cosa.id)}
-                  />{" "}
-                  {cosa.title}
+        <ul className="mx-auto max-w-xl space-y-3">
+          {things.map((cosa) => {
+            const isChecked = thingsChecked?.includes(cosa.id);
+            return (
+              <li key={cosa.id}>
+                <label
+                  className={`
+                    flex cursor-pointer items-start gap-4 rounded-xl border px-4 py-3.5
+                    transition-all duration-200
+                    ${isChecked
+                      ? "border-primary/40 bg-primary/5"
+                      : "border-stroke bg-white hover:border-primary/30 hover:bg-gray-light/80"
+                    }
+                  `}
+                >
+                  <span className="relative mt-0.5 flex shrink-0">
+                    <input
+                      type="checkbox"
+                      name={cosa.id.toString()}
+                      checked={isChecked}
+                      onChange={() => toggleId(cosa.id)}
+                      className="
+                        h-5 w-5 shrink-0 cursor-pointer rounded-md border-2 border-primary/60
+                        text-primary accent-primary
+                        focus:ring-2 focus:ring-primary/30 focus:ring-offset-2
+                        transition-colors
+                      "
+                    />
+                  </span>
+                  <span
+                    className={`text-body-color ${isChecked ? "line-through opacity-75" : ""}`}
+                  >
+                    {cosa.title}
+                  </span>
                 </label>
               </li>
-            ))}
-          </ul>
-        </div>
+            );
+          })}
+        </ul>
       </div>
     </section>
   );

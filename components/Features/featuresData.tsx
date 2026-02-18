@@ -20,9 +20,9 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Luogo",
-    paragraphHTML: `<a class='text-blue-600 hover:underline' target='_blank' href='https://www.google.com/maps/place/Grand+Hotel+Salerno/@40.6725175,14.7733016,17z/data=!3m1!4b1!4m9!3m8!1s0x133bc246d5b3550b:0x14eeac8b514c5197!5m2!4m1!1i2!8m2!3d40.6725135!4d14.7758765!16s%2Fg%2F1tj5515h?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D'>
+    paragraphHTML: `<a class='text-primary hover:underline' target='_blank' href='https://www.google.com/maps/place/Grand+Hotel+Salerno/@40.6725175,14.7733016,17z/data=!3m1!4b1!4m9!3m8!1s0x133bc246d5b3550b:0x14eeac8b514c5197!5m2!4m1!1i2!8m2!3d40.6725135!4d14.7758765!16s%2Fg%2F1tj5515h?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D'>
        Grand Hotel Salerno via Lungomare Clemente Tafuri, 1 - 84127 Salerno (SA)
-      </a> con parcheggio <a class='text-blue-600 hover:underline' target='_blank' href='https://www.google.com/maps/place/Via+Torrione,+6-80,+84127+Salerno+SA/@40.6731502,14.7749734,18z/data=!3m1!4b1!4m17!1m10!3m9!1s0x133bc246d5b3550b:0x14eeac8b514c5197!2sGrand+Hotel+Salerno!5m2!4m1!1i2!8m2!3d40.6725135!4d14.7758765!16s%2Fg%2F1tj5515h!3m5!1s0x133bc2476c3a2413:0x194f102b39a83728!8m2!3d40.6731482!4d14.7762257!16s%2Fg%2F11w36_cs09?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D'>qui</a>
+      </a> con parcheggio <a class='text-primary hover:underline' target='_blank' href='https://www.google.com/maps/place/Via+Torrione,+6-80,+84127+Salerno+SA/@40.6731502,14.7749734,18z/data=!3m1!4b1!4m17!1m10!3m9!1s0x133bc246d5b3550b:0x14eeac8b514c5197!2sGrand+Hotel+Salerno!5m2!4m1!1i2!8m2!3d40.6725135!4d14.7758765!16s%2Fg%2F1tj5515h!3m5!1s0x133bc2476c3a2413:0x194f102b39a83728!8m2!3d40.6731482!4d14.7762257!16s%2Fg%2F11w36_cs09?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D'>qui</a>
       <br/> <strong>l'acqua nelle stanze non è potabile</strong>
       <br/> <strong>WIFI in camera è libero </strong>`,
   },
@@ -134,59 +134,6 @@ const featuresData: Feature[] = [
       "Il check-in si potra' effettuare dalle ore 14:00 di venerdi' 27 - il corso iniziera' alle ore 15 e terminera' alle ore 12 di domenica 29.",
   },
   {
-    id: 3,
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="64.975"
-        height="53.707"
-        viewBox="0 0 64.975 53.707"
-      >
-        <g
-          id="Icon_feather-users"
-          data-name="Icon feather-users"
-          transform="translate(1.5 1.5)"
-        >
-          <path
-            id="Tracciato_66"
-            data-name="Tracciato 66"
-            d="M46.573,39.4V33.768A11.268,11.268,0,0,0,35.3,22.5H12.768A11.268,11.268,0,0,0,1.5,33.768V39.4"
-            transform="translate(-1.5 11.305)"
-            fill="none"
-            stroke="#019289"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="3"
-          />
-          <path
-            id="Tracciato_67"
-            data-name="Tracciato 67"
-            d="M30.037,15.768A11.268,11.268,0,1,1,18.768,4.5,11.268,11.268,0,0,1,30.037,15.768Z"
-            transform="translate(3.768 -4.5)"
-            fill="none"
-            stroke="#019289"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="3"
-          />
-          <path
-            id="Tracciato_68"
-            data-name="Tracciato 68"
-            d="M43.719,55.036V49.4a11.268,11.268,0,0,0-8.451-10.9M24,4.7a11.268,11.268,0,0,1,0,21.832"
-            transform="translate(18.256 -4.329)"
-            fill="none"
-            stroke="#019289"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="3"
-          />
-        </g>
-      </svg>
-    ),
-    title: "Partecipanti",
-    paragraph: "Responsabili fino a capitolo",
-  },
-  {
     id: 6,
     icon: (
       <svg
@@ -227,7 +174,7 @@ const featuresData: Feature[] = [
     ),
     title: "Contatti",
     paragraphHTML: `Per chiarimenti e/o informazioni scrivere al comitato del corso:
-                <a class='text-blue-600 hover:underline' target='_blank' href="mailto:corso.uomini@sgi-italia.org">
+                <a class='text-primary hover:underline' target='_blank' href="mailto:corso.uomini@sgi-italia.org">
                   corso.uomini@sgi-italia.org
                 </a>`,
   },
