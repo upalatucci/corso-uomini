@@ -11,7 +11,10 @@ type Metadata = {
 function parseFrontmatter(fileContent: string) {
   const frontmatterRegex = /---\s*([\s\S]*?)\s*---/;
   const match = frontmatterRegex.exec(fileContent);
-  const frontMatterBlock = match![1];
+  if (!match?.[1]) {
+    throw new Error("MDX file must have valid frontmatter (--- ... ---)");
+  }
+  const frontMatterBlock = match[1];
   const content = fileContent.replace(frontmatterRegex, "").trim();
   const frontMatterLines = frontMatterBlock.trim().split("\n");
   const metadata: Partial<Metadata> = {};
@@ -38,14 +41,16 @@ function readMDXFile(filePath: string) {
 function getMDXData(dir: string) {
   const mdxFiles = getMDXFiles(dir);
   return mdxFiles.map((file) => {
-    const { metadata, content } = readMDXFile(path.join(dir, file));
-    const slug = path.basename(file, path.extname(file));
-
-    return {
-      metadata,
-      slug,
-      content,
-    };
+    try {
+      const { metadata, content } = readMDXFile(path.join(dir, file));
+      const slug = path.basename(file, path.extname(file));
+      return { metadata, slug, content };
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "Invalid MDX";
+      throw new Error(`Error reading ${file}: ${message}`, {
+        cause: err instanceof Error ? err : undefined,
+      });
+    }
   });
 }
 

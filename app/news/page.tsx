@@ -22,33 +22,47 @@ const NewsPage: FC = () => {
   }: {
     posts: typeof posts2026;
   }) => (
-    <div className="w-full space-y-4">
-      {posts.map((post) => (
-        <Link
-          key={post.slug}
-          className="flex flex-col space-y-1 mb-4 cursor-pointer bg-white rounded-lg overflow-hidden shadow-one hover:shadow-two transition-shadow md:flex-row"
-          href={`/news/${post.slug}`}
-        >
-          <Image
-            alt=""
-            src={(post.metadata.image as string) || "/images/logo/logo-corso-uomini.png"}
-            width={300}
-            height={300}
-            className="w-full md:w-80 object-cover shrink-0"
-          />
-          <div className="flex flex-col p-4">
-            <p className="text-primary font-bold tracking-tight">
-              {post.metadata.title.toUpperCase()}
-            </p>
-            <p className="text-body-color my-4 tracking-tight">
-              {post.metadata.summary}
-            </p>
-            <p className="text-body-color tabular-nums text-sm">
-              {formatDate(post.metadata.publishedAt, false)}
-            </p>
-          </div>
-        </Link>
-      ))}
+    <div className="flex w-full flex-col gap-5">
+      {posts.map((post) => {
+        const imgSrc =
+          (post.metadata.image as string) ||
+          "/images/logo/logo-corso-uomini.png";
+        const isMotto = imgSrc.includes("motto");
+        return (
+          <Link
+            key={post.slug}
+            className="flex gap-4 rounded-2xl bg-white/80 p-5 shadow-one transition-shadow hover:shadow-two md:gap-6 md:p-6"
+            href={`/news/${post.slug}`}
+          >
+            <div
+              className={`relative shrink-0 overflow-hidden ${
+                isMotto
+                  ? "h-16 w-28 rounded-lg md:h-20 md:w-36"
+                  : "h-16 w-16 rounded-full md:h-20 md:w-20"
+              }`}
+            >
+              <Image
+                alt=""
+                src={imgSrc}
+                fill
+                className={isMotto ? "object-contain" : "object-cover"}
+                sizes={isMotto ? "144px" : "80px"}
+              />
+            </div>
+            <div className="min-w-0 flex-1">
+              <p className="mb-1 font-bold tracking-tight text-primary">
+                {post.metadata.title}
+              </p>
+              <p className="text-sm leading-relaxed text-body-color line-clamp-3 md:text-base">
+                {post.metadata.summary}
+              </p>
+              <p className="mt-2 text-xs tabular-nums text-body-color md:text-sm">
+                {formatDate(post.metadata.publishedAt, false)}
+              </p>
+            </div>
+          </Link>
+        );
+      })}
     </div>
   );
 

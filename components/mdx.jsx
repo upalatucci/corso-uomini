@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Link from "next/link";
 import Image from "next/image";
@@ -42,7 +43,14 @@ function CustomLink(props) {
     return <a {...props} />;
   }
 
-  return <a target="_blank" rel="noopener noreferrer" className="text-primary" {...props} />;
+  return (
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-primary underline underline-offset-2 hover:text-accent transition-colors"
+      {...props}
+    />
+  );
 }
 
 function RoundedImage(props) {
@@ -65,32 +73,40 @@ function slugify(str) {
     .replace(/\-\-+/g, "-"); // Replace multiple - with single -
 }
 
+const headingClass = {
+  1: "text-2xl md:text-3xl font-bold text-primary mt-10 mb-4 pb-2 border-b-2 border-primary",
+  2: "text-xl md:text-2xl font-bold text-primary mt-8 mb-3 pb-2 border-b-2 border-primary",
+  3: "text-lg md:text-xl font-semibold text-primary mt-6 mb-2",
+  4: "text-base font-semibold text-dark mt-4 mb-2",
+  5: "text-base font-semibold text-dark mt-4 mb-2",
+  6: "text-sm font-semibold text-dark mt-3 mb-1",
+};
+
 function createHeading(level) {
+  const cls = headingClass[level] || "text-primary font-bold my-4";
   const Heading = ({ children }) => {
     const slug = slugify(children);
     return React.createElement(
       `h${level}`,
-      { id: slug, className: 'text-primary text-xl my-4 font-bold' },
-      [
-        React.createElement("a", {
-          href: `#${slug}`,
-          key: `link-${slug}`,
-          className: "anchor",
-        }),
-      ],
+      { id: slug, className: cls },
       children
     );
   };
-
   Heading.displayName = `Heading${level}`;
-
   return Heading;
 }
 
-const Blockquote = ({children}) => <blockquote className="p-4 my-4 border-s-4 border-primary">{children}</blockquote>
+const Blockquote = ({ children }) => (
+  <blockquote className="border-l-4 border-primary bg-gray-light/80 py-4 pl-5 pr-4 not-italic rounded-r-lg my-6 text-body-color">
+    {children}
+  </blockquote>
+);
 
-
-const List = ({children}) => <ul className="list-inside list-disc my-4">{children}</ul>
+const List = ({ children }) => (
+  <ul className="my-4 list-disc space-y-1 pl-6 [&>li]:pl-1 [&_li]:marker:text-primary">
+    {children}
+  </ul>
+);
 
 const components = {
   h1: createHeading(1),

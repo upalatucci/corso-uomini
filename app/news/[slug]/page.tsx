@@ -1,5 +1,5 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { CustomMDX } from "../../../components/mdx";
 import { formatDate, getBlogPosts } from "../utils";
 import { baseUrl } from "../../sitemap";
@@ -12,11 +12,16 @@ export async function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: any }) {
-  const post = getBlogPosts().find(async (post) => post.slug === params?.slug);
-  if (!post) {
-    return;
-  }
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug?: string } | undefined>;
+}) {
+  const resolved = await params;
+  const slug = resolved?.slug;
+  if (!slug) return {};
+  const post = getBlogPosts().find((p) => p.slug === slug);
+  if (!post) return {};
 
   const {
     title,
@@ -52,51 +57,97 @@ export function generateMetadata({ params }: { params: any }) {
   };
 }
 
-export default function Blog({ params }: { params: any }) {
-  const post = getBlogPosts().find((post) => post.slug === params.slug);
+export default async function Blog({
+  params,
+}: {
+  params: Promise<{ slug?: string } | undefined>;
+}) {
+  const resolved = await params;
+  const slug = resolved?.slug;
+  if (!slug) notFound();
+  const post = getBlogPosts().find((p) => p.slug === slug);
+  if (!post) notFound();
 
-  if (!post) {
-    notFound();
-  }
+  const image = post.metadata.image as string | undefined;
+  const isMotto = image?.includes("motto");
 
   return (
-    <div className="relative z-10 min-h-screen overflow-hidden bg-defaultBg px-4 pb-8 pt-[120px] md:px-10 md:pb-[80px] md:pt-[100px] xl:pb-[100px] xl:pt-[180px] 2xl:pb-[120px] 2xl:pt-[210px]">
-      <section className="flex flex-wrap container my-4 justify-center">
-        <script
-          type="application/ld+json"
-          suppressHydrationWarning
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "News",
-              headline: post.metadata.title,
-              datePublished: post.metadata.publishedAt,
-              dateModified: post.metadata.publishedAt,
-              description: post.metadata.summary,
-              image: post.metadata.image
-                ? `${baseUrl}${post.metadata.image}`
-                : `/og?title=${encodeURIComponent(post.metadata.title)}`,
-              url: `${baseUrl}/news/${post.slug}`,
-              author: {
-                "@type": "Person",
-                name: "Comitato corso uomini",
-              },
-            }),
-          }}
-        />
+    <div className="relative z-10 min-h-screen overflow-hidden bg-defaultBg px-4 pb-16 pt-[100px] md:px-6 md:pb-24 md:pt-[120px]">
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "News",
+            headline: post.metadata.title,
+            datePublished: post.metadata.publishedAt,
+            dateModified: post.metadata.publishedAt,
+            description: post.metadata.summary,
+            image: image
+              ? `${baseUrl}${image}`
+              : `${baseUrl}/og?title=${encodeURIComponent(post.metadata.title)}`,
+            url: `${baseUrl}/news/${post.slug}`,
+            author: {
+              "@type": "Person",
+              name: "Comitato corso uomini",
+            },
+          }),
+        }}
+      />
 
-        <h1 className="title text-primary font-semibold text-2xl tracking-tighter">
-          {post.metadata.title}
-        </h1>
-        <div className="ml-4 flex justify-between items-center mt-2 mb-8 text-sm">
-          <p className="text-sm text-neutral-600 dark:text-neutral-400">
+      <article className="mx-auto max-w-3xl">
+        {/* Hero image */}
+        {image && (
+          <div
+            className={`relative mb-8 overflow-hidden rounded-2xl shadow-two ${
+              isMotto
+                ? "flex items-center justify-center bg-gray-light/30 p-4"
+                : "aspect-[2/1] md:aspect-[21/9]"
+            }`}
+          >
+            {isMotto ? (
+              <Image
+                src={image}
+                alt=""
+                width={546}
+                height={567}
+                className="mx-auto max-h-[320px] w-auto object-contain md:max-h-[400px]"
+                priority
+              />
+            ) : (
+              <Image
+                src={image}
+                alt=""
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 672px"
+                priority
+              />
+            )}
+          </div>
+        )}
+
+        {/* Header */}
+        <header className="mb-10">
+          <p className="mb-2 text-sm font-medium uppercase tracking-wider text-primary/80">
+            News dalle regioni
+          </p>
+          <h1 className="text-3xl font-bold tracking-tight text-primary md:text-4xl md:leading-tight">
+            {post.metadata.title}
+          </h1>
+          <p className="mt-4 text-sm text-body-color">
             {formatDate(post.metadata.publishedAt)}
           </p>
+        </header>
+
+        {/* Content card */}
+        <div className="rounded-2xl border border-stroke bg-white px-6 py-8 shadow-one md:px-10 md:py-12">
+          <div className="newsletter-prose">
+            <CustomMDX source={post.content} />
+          </div>
         </div>
-        <article className="prose">
-          <CustomMDX source={post.content} />
-        </article>
-      </section>
+      </article>
     </div>
   );
 }
