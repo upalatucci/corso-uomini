@@ -51,7 +51,7 @@ const News = () => {
           href="/news"
           className="inline-block rounded-xl bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-accent/90"
         >
-          Leggi altre esperienze
+          Leggi altre news
         </Link>
       </div>
     </div>
