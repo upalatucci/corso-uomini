@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { login, LoginState } from "@/lib/login";
 import { useFormState, useFormStatus } from "react-dom";
 
@@ -49,7 +50,15 @@ const Login = () => {
               className="wow fadeInUp mx-auto max-w-[800px] text-center"
               data-wow-delay=".2s"
             >
-              <h1 className="mb-5 text-3xl font-bold leading-tight text-black  sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+              <Image
+                src="/images/logo/logo-corso-uomini.png"
+                alt="Corso Uomini"
+                width={160}
+                height={160}
+                className="mx-auto mb-6 rounded-2xl"
+                priority
+              />
+              <h1 className="mb-5 text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                 Accedi
               </h1>
 
