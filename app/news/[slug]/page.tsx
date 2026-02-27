@@ -69,8 +69,6 @@ export default async function Blog({
   if (!post) notFound();
 
   const image = post.metadata.image as string | undefined;
-  const isMotto = image?.includes("motto");
-
   return (
     <div className="relative z-10 min-h-screen overflow-hidden bg-defaultBg px-4 pb-16 pt-[100px] md:px-6 md:pb-24 md:pt-[120px]">
       <script
@@ -100,13 +98,9 @@ export default async function Blog({
         {/* Hero image */}
         {image && (
           <div
-            className={`relative mb-8 overflow-hidden rounded-2xl shadow-two ${
-              isMotto
-                ? "flex items-center justify-center bg-gray-light/30 p-4"
-                : "aspect-[2/1] md:aspect-[21/9]"
-            }`}
+            className={`relative mb-8 overflow-hidden rounded-2xl shadow-two "flex items-center justify-center bg-gray-light/30 p-4"
+            `}
           >
-            {isMotto ? (
               <Image
                 src={image}
                 alt=""
@@ -115,16 +109,6 @@ export default async function Blog({
                 className="mx-auto max-h-[320px] w-auto object-contain md:max-h-[400px]"
                 priority
               />
-            ) : (
-              <Image
-                src={image}
-                alt=""
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 672px"
-                priority
-              />
-            )}
           </div>
         )}
 
