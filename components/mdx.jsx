@@ -108,6 +108,21 @@ const List = ({ children }) => (
   </ul>
 );
 
+function Button({ href, children }) {
+  return (
+    <div className="my-8 text-center">
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block rounded-xl bg-primary px-10 py-4 text-xl font-bold text-white shadow-md transition-all hover:brightness-110 hover:shadow-lg"
+      >
+        {children}
+      </a>
+    </div>
+  );
+}
+
 const components = {
   h1: createHeading(1),
   h2: createHeading(2),
@@ -121,7 +136,8 @@ const components = {
   code: Code,
   Table,
   blockquote: Blockquote,
-  ul: List
+  ul: List,
+  Button
 };
 
 export function CustomMDX(props) {
