@@ -17,7 +17,7 @@ const ThingsToBring: FC = () => {
           <a
             className="text-primary hover:underline"
             download
-            href="/pdf/mappa.pdf"
+            href="/images/news/mappa_Salerno_interattiva.pdf"
           >
             Scarica la mappa INTERATTIVA di Salerno. Clicca sulle icone!!
           </a>
@@ -27,7 +27,7 @@ const ThingsToBring: FC = () => {
           <a
             className="text-primary hover:underline"
             download
-            href="/pdf/mappashotelstampa.pdf"
+            href="/images/news/mappaA4_grandhotelsalerno-2.pdf"
           >
             E anche la mappa dell&apos;hotel
           </a>

@@ -123,6 +123,21 @@ function Button({ href, children }) {
   );
 }
 
+function DownloadButton({ href, children }) {
+  return (
+    <div className="my-4 text-center">
+      <a
+        href={href}
+        download
+        className="inline-flex items-center gap-2 rounded-xl bg-primary/10 border-2 border-primary px-8 py-3 text-lg font-bold text-primary shadow-sm transition-all hover:bg-primary hover:text-white hover:shadow-md"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        {children}
+      </a>
+    </div>
+  );
+}
+
 const components = {
   h1: createHeading(1),
   h2: createHeading(2),
@@ -137,7 +152,8 @@ const components = {
   Table,
   blockquote: Blockquote,
   ul: List,
-  Button
+  Button,
+  DownloadButton
 };
 
 export function CustomMDX(props) {
